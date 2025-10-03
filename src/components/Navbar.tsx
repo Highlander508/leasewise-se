@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useTranslation } from "react-i18next";
 import logo from "@/assets/leasewise-logo.png";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
-  const { t } = useTranslation();
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -30,24 +27,23 @@ const Navbar = () => {
               onClick={() => scrollToSection("services")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t('navbar.services')}
+              Vår tjänst
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t('navbar.about')}
+              Om oss
             </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t('navbar.contact')}
+              Kontakt
             </button>
             <Button onClick={() => scrollToSection("contact")}>
-              {t('navbar.bookMeeting')}
+              Boka möte
             </Button>
-            <LanguageSwitcher />
           </div>
 
           {/* Mobile Navigation */}
@@ -63,26 +59,23 @@ const Navbar = () => {
                   onClick={() => scrollToSection("services")}
                   className="text-left text-lg hover:text-primary transition-colors"
                 >
-                  {t('navbar.services')}
+                  Vår tjänst
                 </button>
                 <button
                   onClick={() => scrollToSection("about")}
                   className="text-left text-lg hover:text-primary transition-colors"
                 >
-                  {t('navbar.about')}
+                  Om oss
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="text-left text-lg hover:text-primary transition-colors"
                 >
-                  {t('navbar.contact')}
+                  Kontakt
                 </button>
                 <Button onClick={() => scrollToSection("contact")} className="mt-4">
-                  {t('navbar.bookMeeting')}
+                  Boka möte
                 </Button>
-                <div className="pt-4">
-                  <LanguageSwitcher />
-                </div>
               </div>
             </SheetContent>
           </Sheet>

@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertTriangle } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 const ProblemSolution = () => {
-  const { t } = useTranslation();
 
   return (
     <section className="py-20 px-4 bg-muted/30">
@@ -18,10 +16,10 @@ const ProblemSolution = () => {
               </div>
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  {t('problem.title')}
+                  Företag förlorar miljoner på outnyttjade möjligheter
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {t('problem.description')}
+                  Många företag saknar en aktiv strategi för sina hyresavtal. Det leder till att viktiga uppsägningstider missas, att hyresvillkor aldrig omförhandlas och att lokalkostnader stiger i onödan. Med LeaseWise får ni en professionell partner som bevakar varje avtal, förhandlar åt er och säkerställer att ni alltid har rätt villkor.
                 </p>
               </div>
             </div>

@@ -4,23 +4,20 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
-  const { t } = useTranslation();
-
   const faqs = [
     {
-      question: t('faq.questions.noSavings.question'),
-      answer: t('faq.questions.noSavings.answer')
+      question: "Vad händer om ni inte får ner hyran?",
+      answer: "Då betalar ni bara årsavgiften – vi tar inget extra success fee."
     },
     {
-      question: t('faq.questions.oneContract.question'),
-      answer: t('faq.questions.oneContract.answer')
+      question: "Kan ni hjälpa oss även om vi bara har 1 avtal?",
+      answer: "Ja, vi arbetar med allt från mindre bolag till stora kedjor."
     },
     {
-      question: t('faq.questions.timeline.question'),
-      answer: t('faq.questions.timeline.answer')
+      question: "Hur lång tid tar processen?",
+      answer: "Det varierar, men vi påbörjar bevakning och dialog omgående och hanterar förhandlingar när avtalen närmar sig brytpunkt."
     }
   ];
 
@@ -28,7 +25,7 @@ const FAQ = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          {t('faq.title')}
+          Vanliga frågor
         </h2>
 
         <Accordion type="single" collapsible className="w-full">

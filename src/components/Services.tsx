@@ -1,30 +1,27 @@
 import { Eye, FileX, MessageSquare, TrendingDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { useTranslation } from "react-i18next";
 
 const Services = () => {
-  const { t } = useTranslation();
-  
   const steps = [
     {
       icon: <Eye className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.monitoring.title'),
-      description: t('services.steps.monitoring.description')
+      title: "Bevakning",
+      description: "Vi registrerar och bevakar alla era hyresavtal och säkerställer att inga deadlines missas."
     },
     {
       icon: <FileX className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.termination.title'),
-      description: t('services.steps.termination.description')
+      title: "Uppsägning",
+      description: "Vi hanterar uppsägningar i rätt tid för att öppna upp för förhandlingar."
     },
     {
       icon: <MessageSquare className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.negotiation.title'),
-      description: t('services.steps.negotiation.description')
+      title: "Omförhandling",
+      description: "Vi förhandlar era villkor och hyror baserat på marknadsdata och vår erfarenhet."
     },
     {
       icon: <TrendingDown className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.results.title'),
-      description: t('services.steps.results.description')
+      title: "Resultat",
+      description: "Ni får rapporter över besparingar och en långsiktig strategi för ert bestånd."
     }
   ];
 
@@ -32,9 +29,9 @@ const Services = () => {
     <section id="services" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('services.title')}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Så fungerar det</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t('services.subtitle')}
+            En sömlös process från start till resultat
           </p>
         </div>
 
@@ -54,22 +51,22 @@ const Services = () => {
         </div>
 
         <div className="bg-card border rounded-lg p-8 md:p-12">
-          <h3 className="text-2xl font-bold mb-6">{t('services.businessModel.title')}</h3>
+          <h3 className="text-2xl font-bold mb-6">Vår affärsmodell</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">{t('services.businessModel.monitoring.price')}</div>
-              <div className="font-semibold mb-2">{t('services.businessModel.monitoring.title')}</div>
-              <p className="text-sm text-muted-foreground">{t('services.businessModel.monitoring.description')}</p>
+              <div className="text-3xl font-bold text-secondary mb-2">Från 5 000 kr/mån</div>
+              <div className="font-semibold mb-2">Bevakning</div>
+              <p className="text-sm text-muted-foreground">Fast månadsavgift baserad på portföljens storlek</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">{t('services.businessModel.successFee.price')}</div>
-              <div className="font-semibold mb-2">{t('services.businessModel.successFee.title')}</div>
-              <p className="text-sm text-muted-foreground">{t('services.businessModel.successFee.description')}</p>
+              <div className="text-3xl font-bold text-secondary mb-2">20% av besparingen</div>
+              <div className="font-semibold mb-2">Success fee</div>
+              <p className="text-sm text-muted-foreground">Endast vid lyckad omförhandling eller uppsägning</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">{t('services.businessModel.startup.price')}</div>
-              <div className="font-semibold mb-2">{t('services.businessModel.startup.title')}</div>
-              <p className="text-sm text-muted-foreground">{t('services.businessModel.startup.description')}</p>
+              <div className="text-3xl font-bold text-secondary mb-2">25 000 kr</div>
+              <div className="font-semibold mb-2">Uppstartskostnad</div>
+              <p className="text-sm text-muted-foreground">Engångsavgift för djupanalys och systemintegrering</p>
             </div>
           </div>
         </div>

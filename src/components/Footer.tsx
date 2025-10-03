@@ -1,8 +1,6 @@
 import logo from "@/assets/leasewise-logo.png";
-import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation();
   
   return (
     <footer className="bg-primary text-primary-foreground py-12 px-4">
@@ -11,28 +9,28 @@ const Footer = () => {
           <div>
             <img src={logo} alt="LeaseWise AB" className="h-10 mb-4 brightness-0 invert" />
             <p className="text-sm text-primary-foreground/80">
-              {t('footer.tagline')}
+              Specialister inom hyresavtalsförvaltning och portföljoptimering
             </p>
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">{t('footer.contact')}</h3>
+            <h3 className="font-semibold mb-4">Kontakt</h3>
             <div className="space-y-2 text-sm text-primary-foreground/80">
-              <p>{t('footer.email')}</p>
-              <p>{t('footer.phone')}</p>
+              <p>Email: info@leasewise.se</p>
+              <p>Telefon: +46 123 456 789</p>
             </div>
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
+            <h3 className="font-semibold mb-4">LeaseWise AB</h3>
             <p className="text-sm text-primary-foreground/80">
-              {t('footer.slogan')}
+              Rätt hyra. Rätt villkor. Alltid.
             </p>
           </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
+          <p>© {new Date().getFullYear()} LeaseWise AB. Alla rättigheter förbehållna.</p>
         </div>
       </div>
     </footer>

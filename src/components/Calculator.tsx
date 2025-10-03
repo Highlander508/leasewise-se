@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
-import { useTranslation } from "react-i18next";
 
 const Calculator = () => {
-  const { t } = useTranslation();
   const [numberOfContracts, setNumberOfContracts] = useState(10);
   const [averageRent, setAverageRent] = useState(500000);
 
@@ -20,7 +18,7 @@ const Calculator = () => {
     <section className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          {t('calculator.title')}
+          Räkna på era möjliga besparingar
         </h2>
 
         <Card>
@@ -28,7 +26,7 @@ const Calculator = () => {
             <div className="space-y-8">
               <div>
                 <label className="text-sm font-medium mb-2 block">
-                  {t('calculator.numberOfContracts')}: <span className="text-secondary font-bold">{numberOfContracts}</span>
+                  Antal avtal: <span className="text-secondary font-bold">{numberOfContracts}</span>
                 </label>
                 <Slider
                   value={[numberOfContracts]}
@@ -42,7 +40,7 @@ const Calculator = () => {
 
               <div>
                 <label className="text-sm font-medium mb-2 block">
-                  {t('calculator.averageRent')}: <span className="text-secondary font-bold">{formatNumber(averageRent)} kr</span>
+                  Genomsnittlig årshyra per avtal (SEK): <span className="text-secondary font-bold">{formatNumber(averageRent)} kr</span>
                 </label>
                 <Slider
                   value={[averageRent]}
@@ -57,22 +55,17 @@ const Calculator = () => {
               <div className="pt-6 border-t">
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground mb-1">{t('calculator.totalRent')}</p>
+                    <p className="text-sm text-muted-foreground mb-1">Total årshyra</p>
                     <p className="text-2xl font-bold text-foreground">{formatNumber(totalRent)} kr</p>
                   </div>
                   <div className="bg-secondary/10 p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground mb-1">{t('calculator.potentialSavings')}</p>
+                    <p className="text-sm text-muted-foreground mb-1">Möjlig besparing</p>
                     <p className="text-2xl font-bold text-secondary">{formatNumber(minSavings)} - {formatNumber(maxSavings)} kr</p>
                   </div>
                 </div>
 
                 <p className="text-center text-muted-foreground">
-                  {t('calculator.result', {
-                    contracts: numberOfContracts,
-                    rent: formatNumber(averageRent),
-                    minSavings: formatNumber(minSavings),
-                    maxSavings: formatNumber(maxSavings)
-                  })}
+                  Med {numberOfContracts} avtal á {formatNumber(averageRent)} kr/år kan ni spara mellan {formatNumber(minSavings)} - {formatNumber(maxSavings)} SEK över en avtalsperiod.
                 </p>
               </div>
             </div>
