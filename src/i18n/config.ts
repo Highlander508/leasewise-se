@@ -17,6 +17,7 @@ const initI18n = async () => {
           translation: enTranslation,
         },
       },
+      lng: 'sv',
       fallbackLng: 'sv',
       supportedLngs: ['sv', 'en'],
       debug: false,
