@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Calculator = () => {
   const [numberOfContracts, setNumberOfContracts] = useState(10);
@@ -74,11 +75,10 @@ const Calculator = () => {
                 </p>
                 
                 <div className="flex justify-center">
-                  <a 
-                    href={`mailto:info@leasewise.se?subject=Besparingskalkyl&body=Antal avtal: ${numberOfContracts}%0AGenomsnittlig årshyra: ${formatNumber(averageRent)} kr%0ATotal årshyra: ${formatNumber(totalRent)} kr%0AMöjlig besparing: ${formatNumber(minSavings)} - ${formatNumber(maxSavings)} kr`}
-                  >
+                  <a href="#contact">
                     <Button size="lg" className="font-semibold">
-                      Kontakta oss för detaljerad analys
+                      Kontakta oss idag
+                      <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </a>
                 </div>
