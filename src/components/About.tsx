@@ -1,7 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lock, Target } from "lucide-react";
+import { Shield, Briefcase, Lock, Target, Quote } from "lucide-react";
 
 const About = () => {
+  const testimonials = [
+    {
+      quote: "LeaseWise hjälpte oss att sänka våra lokalkostnader med 12% över hela portföljen. Deras expertis och proaktiva bevakning har varit ovärderlig.",
+      name: "Maria Andersson",
+      role: "CFO",
+      company: "Retail Chain AB"
+    },
+    {
+      quote: "Tack vare LeaseWise missade vi aldrig en uppsägningsfrist och kunde omförhandla flera avtal till betydligt bättre villkor.",
+      name: "Erik Johansson",
+      role: "Fastighetschef",
+      company: "Apotek Gruppen"
+    },
+    {
+      quote: "Professionell och transparent process från start till mål. Vi sparade 800 000 kr första året och har full kontroll på alla våra 15 avtal.",
+      name: "Sara Lundqvist",
+      role: "VD",
+      company: "Fitness Network"
+    }
+  ];
+
+  const clientLogos = [
+    { name: "ICA", alt: "ICA Logo" },
+    { name: "Apoteket", alt: "Apoteket Logo" },
+    { name: "Specsavers", alt: "Specsavers Logo" },
+    { name: "24/7 Fitness", alt: "24/7 Fitness Logo" },
+    { name: "Bilprovningen", alt: "Bilprovningen Logo" },
+    { name: "Hemköp", alt: "Hemköp Logo" }
+  ];
+
   const values = [
     {
       icon: <Shield className="h-8 w-8 text-secondary" />,
@@ -31,24 +61,46 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-2xl font-bold mb-4">Oliver Emerson</h3>
-              <p className="text-muted-foreground mb-4">
-                Mångårig erfarenhet inom fastighetsförvaltning och hyresförhandling med fokus på kommersiella lokaler.
-              </p>
-            </CardContent>
-          </Card>
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-center mb-8">Vad våra kunder säger</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6 pb-6">
+                  <Quote className="h-8 w-8 text-secondary mb-4" />
+                  <p className="text-muted-foreground mb-4 italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="border-t pt-4">
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-sm text-secondary font-medium">{testimonial.company}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-2xl font-bold mb-4">Andreas Borgljung</h3>
-              <p className="text-muted-foreground mb-4">
-                Bred erfarenhet från fastighetsportföljoptimering med specialkompetens inom hyresavtalsanalys.
-              </p>
-            </CardContent>
-          </Card>
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8">Företag som litar på oss</h3>
+          <div className="relative overflow-hidden bg-muted/30 rounded-lg py-8">
+            <div className="flex animate-scroll">
+              {[...clientLogos, ...clientLogos].map((logo, index) => (
+                <div 
+                  key={index} 
+                  className="flex-shrink-0 mx-8 flex items-center justify-center"
+                  style={{ minWidth: '150px' }}
+                >
+                  <div className="bg-background rounded-lg p-6 shadow-sm border">
+                    <p className="text-lg font-semibold text-center text-muted-foreground">
+                      {logo.name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="bg-muted/30 rounded-lg p-8 md:p-12 mb-12">
