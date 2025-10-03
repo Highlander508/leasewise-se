@@ -6,7 +6,8 @@ const CustomerBenefits = () => {
     "Lägre lokalkostnader",
     "Professionell förhandling utan egen fastighetsavdelning",
     "Full kontroll på alla avtal och deadlines",
-    "Enkelt och effektiv riskhantering"
+    "Enkelt och effektiv riskhantering",
+    "Transparens i ersättningen – ni vet alltid vad ni betalar för"
   ];
 
   return (
@@ -30,6 +31,10 @@ const CustomerBenefits = () => {
             </Card>
           ))}
         </div>
+        
+        <p className="text-center text-muted-foreground mt-8 text-lg">
+          Vi arbetar med allt från kedjor till mindre bolag – inom retail, apotek, optik, gym och bilprovning.
+        </p>
       </div>
     </section>
   );

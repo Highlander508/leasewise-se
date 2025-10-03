@@ -4,7 +4,7 @@ const Services = () => {
   const steps = [{
     icon: <Eye className="h-12 w-12 text-secondary" />,
     title: "Bevakning",
-    description: "Vi registrerar och bevakar alla era hyresavtal och säkerställer att inga deadlines missas."
+    description: "Vi registrerar och bevakar alla era hyresavtal och säkerställer att inga deadlines missas. Leverans: månatliga statusrapporter."
   }, {
     icon: <FileX className="h-12 w-12 text-secondary" />,
     title: "Uppsägning",
@@ -12,7 +12,7 @@ const Services = () => {
   }, {
     icon: <MessageSquare className="h-12 w-12 text-secondary" />,
     title: "Omförhandling",
-    description: "Vi förhandlar era villkor och hyror baserat på marknadsdata och vår erfarenhet."
+    description: "Vi förhandlar era villkor och hyror baserat på marknadsdata och vår erfarenhet. Leverans: minnesanteckningar från förhandling."
   }, {
     icon: <TrendingDown className="h-12 w-12 text-secondary" />,
     title: "Resultat",

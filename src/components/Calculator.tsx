@@ -53,6 +53,10 @@ const Calculator = () => {
               </div>
 
               <div className="pt-6 border-t">
+                <p className="text-sm text-muted-foreground mb-4 text-center">
+                  Beräkningen visar ett typiskt spann baserat på marknadsdata och vår erfarenhet. Den exakta besparingen beror på läge, avtal och hyresvärd.
+                </p>
+                
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground mb-1">Total årshyra</p>
@@ -64,9 +68,18 @@ const Calculator = () => {
                   </div>
                 </div>
 
-                <p className="text-center text-muted-foreground">
+                <p className="text-center text-muted-foreground mb-4">
                   Med {numberOfContracts} avtal á {formatNumber(averageRent)} kr/år kan ni spara mellan {formatNumber(minSavings)} - {formatNumber(maxSavings)} SEK över en avtalsperiod.
                 </p>
+                
+                <div className="text-center">
+                  <a 
+                    href="mailto:info@leasewise.se?subject=Besparingskalkyl&body=Antal avtal: {numberOfContracts}%0AGenomsnittlig årshyra: {formatNumber(averageRent)} kr%0ATotal årshyra: {formatNumber(totalRent)} kr%0AMöjlig besparing: {formatNumber(minSavings)} - {formatNumber(maxSavings)} kr"
+                    className="text-secondary hover:underline font-medium"
+                  >
+                    Skicka siffrorna till oss – vi återkommer inom 24 timmar
+                  </a>
+                </div>
               </div>
             </div>
           </CardContent>

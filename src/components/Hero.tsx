@@ -21,13 +21,13 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button size="lg" onClick={scrollToContact} className="group">
-              Boka möte
+              Kontakta oss idag
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" onClick={scrollToContact}>
-              Kontakta oss idag
-            </Button>
           </div>
+          <p className="text-sm text-muted-foreground pt-2">
+            Svar inom 24 timmar
+          </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16">
             <div className="space-y-2">
