@@ -8,9 +8,9 @@
   "hero": {
     "title": "Rätt hyra. Rätt villkor.",
     "titleHighlight": "Alltid.",
-    "subtitle": "Vi hjälper företag att spara pengar och minska risker genom professionell förvaltning och omförhandling av hyresavtal.",
+    "subtitle": "Vi hjälper företag att bevaka, säga upp och omförhandla hyresavtal – så att ni aldrig betalar mer än ni borde.",
     "bookMeeting": "Boka möte",
-    "contactUs": "Kontakta oss",
+    "contactUs": "Kontakta oss idag",
     "stats": {
       "transparency": {
         "value": "100%",
@@ -30,25 +30,29 @@
       }
     }
   },
+  "problem": {
+    "title": "Företag förlorar miljoner på outnyttjade möjligheter",
+    "description": "Många företag saknar en aktiv strategi för sina hyresavtal. Det leder till att viktiga uppsägningstider missas, att hyresvillkor aldrig omförhandlas och att lokalkostnader stiger i onödan. Med LeaseWise får ni en professionell partner som bevakar varje avtal, förhandlar åt er och säkerställer att ni alltid har rätt villkor."
+  },
   "services": {
     "title": "Så fungerar det",
     "subtitle": "En sömlös process från start till resultat",
     "steps": {
-      "analysis": {
-        "title": "Djupanalys av portfölj",
-        "description": "Vi genomför en grundlig analys av era befintliga hyresavtal och identifierar besparingsmöjligheter."
-      },
       "monitoring": {
-        "title": "Kontinuerlig bevakning",
-        "description": "Vi övervakar alla uppsägningstider och marknadsvillkor för att säkerställa optimala förutsättningar."
+        "title": "Bevakning",
+        "description": "Vi registrerar och bevakar alla era hyresavtal och säkerställer att inga deadlines missas."
+      },
+      "termination": {
+        "title": "Uppsägning",
+        "description": "Vi hanterar uppsägningar i rätt tid för att öppna upp för förhandlingar."
       },
       "negotiation": {
-        "title": "Professionell förhandling",
-        "description": "Vårt team förhandlar aktivt för att säkra de bästa villkoren för era lokaler."
+        "title": "Omförhandling",
+        "description": "Vi förhandlar era villkor och hyror baserat på marknadsdata och vår erfarenhet."
       },
-      "reporting": {
-        "title": "Transparent rapportering",
-        "description": "Ni får löpande insyn i alla aktiviteter och besparingar genom vår plattform."
+      "results": {
+        "title": "Resultat",
+        "description": "Ni får rapporter över besparingar och en långsiktig strategi för ert bestånd."
       }
     },
     "businessModel": {
@@ -70,9 +74,26 @@
       }
     }
   },
+  "benefits": {
+    "title": "Vad ni får med LeaseWise",
+    "items": {
+      "costs": "Lägre lokalkostnader",
+      "negotiation": "Professionell förhandling utan egen fastighetsavdelning",
+      "control": "Full kontroll på alla avtal och deadlines",
+      "risk": "Enkelt och riskfritt – vi tar bara betalt när vi levererar besparing"
+    }
+  },
+  "calculator": {
+    "title": "Räkna på era möjliga besparingar",
+    "numberOfContracts": "Antal avtal",
+    "averageRent": "Genomsnittlig årshyra per avtal (SEK)",
+    "totalRent": "Total årshyra",
+    "potentialSavings": "Möjlig besparing",
+    "result": "Med {{contracts}} avtal á {{rent}} kr/år kan ni spara mellan {{minSavings}} - {{maxSavings}} SEK över en avtalsperiod."
+  },
   "about": {
-    "title": "Expertis inom hyresoptimering",
-    "subtitle": "Vi är specialister med lång erfarenhet från fastighets- och hyresbranschen",
+    "title": "Om oss",
+    "subtitle": "LeaseWise grundades med en enkel idé: att ge företag kontroll över sina hyresavtal och säkerställa att de alltid har rätt villkor. Vi kombinerar affärsmässighet, fastighetskunskap och lång erfarenhet av hyresförhandlingar för att skapa värde för våra kunder.",
     "founders": {
       "oliver": {
         "name": "Oliver Emerson",
@@ -86,19 +107,11 @@
       }
     },
     "values": {
-      "title": "Våra värderingar",
-      "transparency": {
-        "title": "Transparent kommunikation",
-        "description": "Full insyn i alla processer och beslut"
-      },
-      "results": {
-        "title": "Resultatfokus",
-        "description": "Vi får betalt när ni sparar pengar"
-      },
-      "expertise": {
-        "title": "Specialistkompetens",
-        "description": "Djup kunskap inom hyresrätt och förhandling"
-      }
+      "title": "Våra värdeord",
+      "transparency": "Transparens",
+      "business": "Affärsmässighet",
+      "security": "Trygghet",
+      "longterm": "Långsiktighet"
     },
     "purePlay": {
       "title": "Pure-play-specialister",
@@ -109,9 +122,26 @@
       "description": "Vår success fee-modell innebär att vi endast får betalt när vi faktiskt levererar resultat. Detta säkerställer att våra intressen alltid är i linje med era - när ni vinner, vinner vi."
     }
   },
+  "faq": {
+    "title": "Vanliga frågor",
+    "questions": {
+      "noSavings": {
+        "question": "Vad händer om ni inte får ner hyran?",
+        "answer": "Då betalar ni bara årsavgiften – vi tar inget extra success fee."
+      },
+      "oneContract": {
+        "question": "Kan ni hjälpa oss även om vi bara har 1 avtal?",
+        "answer": "Ja, vi arbetar med allt från mindre bolag till stora kedjor."
+      },
+      "timeline": {
+        "question": "Hur lång tid tar processen?",
+        "answer": "Det varierar, men vi påbörjar bevakning och dialog omgående och hanterar förhandlingar när avtalen närmar sig brytpunkt."
+      }
+    }
+  },
   "contact": {
-    "title": "Låt oss prata om era lokaler",
-    "subtitle": "Boka ett kostnadsfritt möte så berättar vi mer om hur vi kan hjälpa er",
+    "title": "Kontakta oss idag",
+    "subtitle": "Fyll i formuläret så återkommer vi inom kort",
     "info": {
       "title": "Kontaktinformation",
       "email": "info@leasewise.se",

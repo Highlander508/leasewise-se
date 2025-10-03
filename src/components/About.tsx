@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Target, Shield, Zap } from "lucide-react";
+import { Shield, Briefcase, Lock, Target } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -8,18 +8,19 @@ const About = () => {
   const values = [
     {
       icon: <Shield className="h-8 w-8 text-secondary" />,
-      title: t('about.values.transparency.title'),
-      description: t('about.values.transparency.description')
+      title: t('about.values.transparency')
     },
     {
-      icon: <Award className="h-8 w-8 text-secondary" />,
-      title: t('about.values.results.title'),
-      description: t('about.values.results.description')
+      icon: <Briefcase className="h-8 w-8 text-secondary" />,
+      title: t('about.values.business')
+    },
+    {
+      icon: <Lock className="h-8 w-8 text-secondary" />,
+      title: t('about.values.security')
     },
     {
       icon: <Target className="h-8 w-8 text-secondary" />,
-      title: t('about.values.expertise.title'),
-      description: t('about.values.expertise.description')
+      title: t('about.values.longterm')
     }
   ];
 
@@ -55,12 +56,11 @@ const About = () => {
 
         <div className="bg-muted/30 rounded-lg p-8 md:p-12 mb-12">
           <h3 className="text-2xl font-bold mb-8 text-center">{t('about.values.title')}</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center space-y-3">
                 <div className="flex justify-center">{value.icon}</div>
                 <h4 className="font-semibold text-lg">{value.title}</h4>
-                <p className="text-sm text-muted-foreground">{value.description}</p>
               </div>
             ))}
           </div>

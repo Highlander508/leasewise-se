@@ -8,9 +8,9 @@
   "hero": {
     "title": "Right rent. Right terms.",
     "titleHighlight": "Always.",
-    "subtitle": "We help companies save money and reduce risks through professional management and renegotiation of lease agreements.",
+    "subtitle": "We help companies monitor, terminate and renegotiate lease agreements – so you never pay more than you should.",
     "bookMeeting": "Book Meeting",
-    "contactUs": "Contact Us",
+    "contactUs": "Contact Us Today",
     "stats": {
       "transparency": {
         "value": "100%",
@@ -30,25 +30,29 @@
       }
     }
   },
+  "problem": {
+    "title": "Companies lose millions on untapped opportunities",
+    "description": "Many companies lack an active strategy for their lease agreements. This leads to important termination deadlines being missed, lease terms never being renegotiated, and premises costs rising unnecessarily. With LeaseWise, you get a professional partner who monitors every agreement, negotiates on your behalf, and ensures you always have the right terms."
+  },
   "services": {
     "title": "How It Works",
     "subtitle": "A seamless process from start to results",
     "steps": {
-      "analysis": {
-        "title": "In-Depth Portfolio Analysis",
-        "description": "We conduct a thorough analysis of your existing lease agreements and identify savings opportunities."
-      },
       "monitoring": {
-        "title": "Continuous Monitoring",
-        "description": "We monitor all termination deadlines and market conditions to ensure optimal circumstances."
+        "title": "Monitoring",
+        "description": "We register and monitor all your lease agreements and ensure no deadlines are missed."
+      },
+      "termination": {
+        "title": "Termination",
+        "description": "We handle terminations on time to open up for negotiations."
       },
       "negotiation": {
-        "title": "Professional Negotiation",
-        "description": "Our team actively negotiates to secure the best terms for your premises."
+        "title": "Renegotiation",
+        "description": "We negotiate your terms and rents based on market data and our experience."
       },
-      "reporting": {
-        "title": "Transparent Reporting",
-        "description": "You get continuous insight into all activities and savings through our platform."
+      "results": {
+        "title": "Results",
+        "description": "You receive reports on savings and a long-term strategy for your portfolio."
       }
     },
     "businessModel": {
@@ -70,9 +74,26 @@
       }
     }
   },
+  "benefits": {
+    "title": "What You Get With LeaseWise",
+    "items": {
+      "costs": "Lower premises costs",
+      "negotiation": "Professional negotiation without your own property department",
+      "control": "Full control of all agreements and deadlines",
+      "risk": "Simple and risk-free – we only charge when we deliver savings"
+    }
+  },
+  "calculator": {
+    "title": "Calculate Your Potential Savings",
+    "numberOfContracts": "Number of contracts",
+    "averageRent": "Average annual rent per contract (SEK)",
+    "totalRent": "Total annual rent",
+    "potentialSavings": "Potential savings",
+    "result": "With {{contracts}} contracts at {{rent}} SEK/year, you can save between {{minSavings}} - {{maxSavings}} SEK over a contract period."
+  },
   "about": {
-    "title": "Expertise in Lease Optimization",
-    "subtitle": "We are specialists with extensive experience from the real estate and lease industry",
+    "title": "About Us",
+    "subtitle": "LeaseWise was founded with a simple idea: to give companies control over their lease agreements and ensure they always have the right terms. We combine business acumen, property knowledge, and extensive experience in lease negotiations to create value for our customers.",
     "founders": {
       "oliver": {
         "name": "Oliver Emerson",
@@ -87,18 +108,10 @@
     },
     "values": {
       "title": "Our Values",
-      "transparency": {
-        "title": "Transparent Communication",
-        "description": "Full transparency in all processes and decisions"
-      },
-      "results": {
-        "title": "Results Focus",
-        "description": "We get paid when you save money"
-      },
-      "expertise": {
-        "title": "Specialist Expertise",
-        "description": "Deep knowledge in lease law and negotiation"
-      }
+      "transparency": "Transparency",
+      "business": "Business Acumen",
+      "security": "Security",
+      "longterm": "Long-term Focus"
     },
     "purePlay": {
       "title": "Pure-Play Specialists",
@@ -109,9 +122,26 @@
       "description": "Our success fee model means we only get paid when we actually deliver results. This ensures our interests are always aligned with yours - when you win, we win."
     }
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "noSavings": {
+        "question": "What happens if you don't reduce the rent?",
+        "answer": "Then you only pay the annual fee – we don't charge any extra success fee."
+      },
+      "oneContract": {
+        "question": "Can you help us even if we only have 1 contract?",
+        "answer": "Yes, we work with everything from smaller companies to large chains."
+      },
+      "timeline": {
+        "question": "How long does the process take?",
+        "answer": "It varies, but we start monitoring and dialogue immediately and handle negotiations when contracts approach their break point."
+      }
+    }
+  },
   "contact": {
-    "title": "Let's Talk About Your Premises",
-    "subtitle": "Book a free meeting and we'll tell you more about how we can help you",
+    "title": "Contact Us Today",
+    "subtitle": "Fill in the form and we'll get back to you shortly",
     "info": {
       "title": "Contact Information",
       "email": "info@leasewise.se",

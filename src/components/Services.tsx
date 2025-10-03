@@ -1,4 +1,4 @@
-import { CheckCircle, TrendingDown, BarChart3, FileText } from "lucide-react";
+import { Eye, FileX, MessageSquare, TrendingDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
@@ -7,24 +7,24 @@ const Services = () => {
   
   const steps = [
     {
-      icon: <CheckCircle className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.analysis.title'),
-      description: t('services.steps.analysis.description')
-    },
-    {
-      icon: <TrendingDown className="h-12 w-12 text-secondary" />,
+      icon: <Eye className="h-12 w-12 text-secondary" />,
       title: t('services.steps.monitoring.title'),
       description: t('services.steps.monitoring.description')
     },
     {
-      icon: <BarChart3 className="h-12 w-12 text-secondary" />,
+      icon: <FileX className="h-12 w-12 text-secondary" />,
+      title: t('services.steps.termination.title'),
+      description: t('services.steps.termination.description')
+    },
+    {
+      icon: <MessageSquare className="h-12 w-12 text-secondary" />,
       title: t('services.steps.negotiation.title'),
       description: t('services.steps.negotiation.description')
     },
     {
-      icon: <FileText className="h-12 w-12 text-secondary" />,
-      title: t('services.steps.reporting.title'),
-      description: t('services.steps.reporting.description')
+      icon: <TrendingDown className="h-12 w-12 text-secondary" />,
+      title: t('services.steps.results.title'),
+      description: t('services.steps.results.description')
     }
   ];
 
