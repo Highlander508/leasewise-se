@@ -1,28 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Tack för din förfrågan! Vi återkommer inom kort.",
-      description: "",
-    });
-    setFormData({ name: "", email: "", company: "", message: "" });
-  };
 
   return (
     <section id="contact" className="py-20 px-4 bg-muted/30">
@@ -34,86 +13,63 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Kontaktinformation</h3>
-              <p className="text-muted-foreground mb-8">
-                Fyll i formuläret så återkommer vi inom kort
-              </p>
-            </div>
-
-            <Card>
-              <CardContent className="pt-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-secondary" />
+        <div className="max-w-4xl mx-auto">
+          <Card className="overflow-hidden">
+            <CardContent className="p-12">
+              <div className="grid md:grid-cols-2 gap-12">
+                <div className="space-y-8">
                   <div>
-                    <div className="font-semibold">Email</div>
-                    <a href="mailto:info@leasewise.se" className="text-muted-foreground hover:text-secondary">
-                      info@leasewise.se
-                    </a>
+                    <h3 className="text-2xl font-bold mb-6">Kontakta oss</h3>
+                    <p className="text-muted-foreground">
+                      Hör av dig till oss så diskuterar vi hur vi kan hjälpa er att optimera era hyreskostnader
+                    </p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 hover:border-primary/40 transition-colors">
+                      <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-sm mb-2">Email</div>
+                        <a 
+                          href="mailto:info@leasewise.se" 
+                          className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
+                        >
+                          info@leasewise.se
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4 p-6 bg-muted/50 rounded-lg">
+                      <Phone className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-sm mb-2">Telefon</div>
+                        <a 
+                          href="tel:+46123456789" 
+                          className="text-xl font-semibold hover:text-secondary transition-colors"
+                        >
+                          +46 123 456 789
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-secondary" />
+
+                <div className="space-y-6 flex flex-col justify-center">
                   <div>
-                    <div className="font-semibold">+46 123 456 789</div>
-                    <a href="tel:+46123456789" className="text-muted-foreground hover:text-secondary">
-                      +46 123 456 789
-                    </a>
+                    <h4 className="font-semibold text-lg mb-4">Vårt team</h4>
+                    <div className="space-y-3">
+                      <p className="text-muted-foreground">Oliver Emerson - Specialist</p>
+                      <p className="text-muted-foreground">Andreas Borgljung - Specialist</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t">
+                    <p className="text-sm text-muted-foreground">
+                      Vi svarar normalt inom 24 timmar på vardagar
+                    </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            <div className="space-y-4">
-              <h4 className="font-semibold">Vårt team</h4>
-              <p className="text-sm text-muted-foreground">Oliver Emerson - Specialist</p>
-              <p className="text-sm text-muted-foreground">Andreas Borgljung - Specialist</p>
-            </div>
-          </div>
-
-          <Card>
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input
-                    placeholder="Ditt namn"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="din@email.se"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    placeholder="Ditt företag"
-                    value={formData.company}
-                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    placeholder="Berätta om era lokaler och behov..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={5}
-                  />
-                </div>
-                <Button type="submit" className="w-full">
-                  Skicka förfrågan
-                </Button>
-              </form>
+              </div>
             </CardContent>
           </Card>
         </div>

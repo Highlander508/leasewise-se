@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
 
 const Calculator = () => {
   const [numberOfContracts, setNumberOfContracts] = useState(10);
@@ -68,16 +69,17 @@ const Calculator = () => {
                   </div>
                 </div>
 
-                <p className="text-center text-muted-foreground mb-4">
+                <p className="text-center text-muted-foreground mb-6">
                   Med {numberOfContracts} avtal á {formatNumber(averageRent)} kr/år kan ni spara mellan {formatNumber(minSavings)} - {formatNumber(maxSavings)} SEK över en avtalsperiod.
                 </p>
                 
-                <div className="text-center">
+                <div className="flex justify-center">
                   <a 
-                    href="mailto:info@leasewise.se?subject=Besparingskalkyl&body=Antal avtal: {numberOfContracts}%0AGenomsnittlig årshyra: {formatNumber(averageRent)} kr%0ATotal årshyra: {formatNumber(totalRent)} kr%0AMöjlig besparing: {formatNumber(minSavings)} - {formatNumber(maxSavings)} kr"
-                    className="text-secondary hover:underline font-medium"
+                    href={`mailto:info@leasewise.se?subject=Besparingskalkyl&body=Antal avtal: ${numberOfContracts}%0AGenomsnittlig årshyra: ${formatNumber(averageRent)} kr%0ATotal årshyra: ${formatNumber(totalRent)} kr%0AMöjlig besparing: ${formatNumber(minSavings)} - ${formatNumber(maxSavings)} kr`}
                   >
-                    Skicka siffrorna till oss – vi återkommer inom 24 timmar
+                    <Button size="lg" className="font-semibold">
+                      Kontakta oss för detaljerad analys
+                    </Button>
                   </a>
                 </div>
               </div>
