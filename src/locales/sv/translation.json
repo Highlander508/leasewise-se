@@ -1,0 +1,147 @@
+{
+  "navbar": {
+    "services": "Vår tjänst",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "bookMeeting": "Boka möte"
+  },
+  "hero": {
+    "title": "Rätt hyra. Rätt villkor.",
+    "titleHighlight": "Alltid.",
+    "subtitle": "Vi hjälper företag att spara pengar och minska risker genom professionell förvaltning och omförhandling av hyresavtal.",
+    "bookMeeting": "Boka möte",
+    "contactUs": "Kontakta oss",
+    "stats": {
+      "transparency": {
+        "value": "100%",
+        "label": "Transparent rapportering"
+      },
+      "savings": {
+        "value": "20%",
+        "label": "Genomsnittlig besparing"
+      },
+      "missed": {
+        "value": "0",
+        "label": "Missade uppsägningar"
+      },
+      "focus": {
+        "value": "∞",
+        "label": "Resultatfokus"
+      }
+    }
+  },
+  "services": {
+    "title": "Så fungerar det",
+    "subtitle": "En sömlös process från start till resultat",
+    "steps": {
+      "analysis": {
+        "title": "Djupanalys av portfölj",
+        "description": "Vi genomför en grundlig analys av era befintliga hyresavtal och identifierar besparingsmöjligheter."
+      },
+      "monitoring": {
+        "title": "Kontinuerlig bevakning",
+        "description": "Vi övervakar alla uppsägningstider och marknadsvillkor för att säkerställa optimala förutsättningar."
+      },
+      "negotiation": {
+        "title": "Professionell förhandling",
+        "description": "Vårt team förhandlar aktivt för att säkra de bästa villkoren för era lokaler."
+      },
+      "reporting": {
+        "title": "Transparent rapportering",
+        "description": "Ni får löpande insyn i alla aktiviteter och besparingar genom vår plattform."
+      }
+    },
+    "businessModel": {
+      "title": "Vår affärsmodell",
+      "monitoring": {
+        "title": "Bevakning",
+        "description": "Fast månadsavgift baserad på portföljens storlek",
+        "price": "Från 5 000 kr/mån"
+      },
+      "successFee": {
+        "title": "Success fee",
+        "description": "Endast vid lyckad omförhandling eller uppsägning",
+        "price": "20% av besparingen"
+      },
+      "startup": {
+        "title": "Uppstartskostnad",
+        "description": "Engångsavgift för djupanalys och systemintegrering",
+        "price": "25 000 kr"
+      }
+    }
+  },
+  "about": {
+    "title": "Expertis inom hyresoptimering",
+    "subtitle": "Vi är specialister med lång erfarenhet från fastighets- och hyresbranschen",
+    "founders": {
+      "oliver": {
+        "name": "Oliver Emerson",
+        "title": "Grundare & Specialist",
+        "description": "Mångårig erfarenhet inom fastighetsförvaltning och hyresförhandling med fokus på kommersiella lokaler."
+      },
+      "andreas": {
+        "name": "Andreas Borgljung",
+        "title": "Grundare & Specialist",
+        "description": "Bred erfarenhet från fastighetsportföljoptimering med specialkompetens inom hyresavtalsanalys."
+      }
+    },
+    "values": {
+      "title": "Våra värderingar",
+      "transparency": {
+        "title": "Transparent kommunikation",
+        "description": "Full insyn i alla processer och beslut"
+      },
+      "results": {
+        "title": "Resultatfokus",
+        "description": "Vi får betalt när ni sparar pengar"
+      },
+      "expertise": {
+        "title": "Specialistkompetens",
+        "description": "Djup kunskap inom hyresrätt och förhandling"
+      }
+    },
+    "purePlay": {
+      "title": "Pure-play-specialister",
+      "description": "Till skillnad från traditionella konsultfirmor är vi en ren hyresavtalsspecialist. Vi har inga intressekonflikter - vår enda agenda är att optimera era hyreskostnader och villkor. Genom att endast fokusera på detta område kan vi erbjuda branschens bästa expertis och resultat."
+    },
+    "performance": {
+      "title": "Prestationsbaserad ersättning",
+      "description": "Vår success fee-modell innebär att vi endast får betalt när vi faktiskt levererar resultat. Detta säkerställer att våra intressen alltid är i linje med era - när ni vinner, vinner vi."
+    }
+  },
+  "contact": {
+    "title": "Låt oss prata om era lokaler",
+    "subtitle": "Boka ett kostnadsfritt möte så berättar vi mer om hur vi kan hjälpa er",
+    "info": {
+      "title": "Kontaktinformation",
+      "email": "info@leasewise.se",
+      "phone": "+46 123 456 789"
+    },
+    "team": {
+      "title": "Vårt team",
+      "oliver": "Oliver Emerson - Specialist",
+      "andreas": "Andreas Borgljung - Specialist"
+    },
+    "form": {
+      "name": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "email": "E-post",
+      "emailPlaceholder": "din@email.se",
+      "company": "Företag",
+      "companyPlaceholder": "Ditt företag",
+      "message": "Meddelande",
+      "messagePlaceholder": "Berätta om era lokaler och behov...",
+      "submit": "Skicka förfrågan",
+      "success": "Tack för din förfrågan! Vi återkommer inom kort."
+    }
+  },
+  "footer": {
+    "tagline": "Specialister inom hyresavtalsförvaltning och portföljoptimering",
+    "contact": "Kontakt",
+    "email": "Email: info@leasewise.se",
+    "phone": "Telefon: +46 123 456 789",
+    "company": "LeaseWise AB",
+    "slogan": "Rätt hyra. Rätt villkor. Alltid.",
+    "copyright": "© {{year}} LeaseWise AB. Alla rättigheter förbehållna."
+  }
+}

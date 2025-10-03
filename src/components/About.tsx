@@ -1,27 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Target, Shield, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const values = [
     {
       icon: <Shield className="h-8 w-8 text-secondary" />,
-      title: "Transparens",
-      description: "Full insyn i alla processer och besparingar"
+      title: t('about.values.transparency.title'),
+      description: t('about.values.transparency.description')
     },
     {
       icon: <Award className="h-8 w-8 text-secondary" />,
-      title: "Trygghet",
-      description: "Professionell hantering av era hyresavtal"
+      title: t('about.values.results.title'),
+      description: t('about.values.results.description')
     },
     {
       icon: <Target className="h-8 w-8 text-secondary" />,
-      title: "Resultat",
-      description: "Bevisbara besparingar och optimeringar"
-    },
-    {
-      icon: <Zap className="h-8 w-8 text-secondary" />,
-      title: "Proaktivitet",
-      description: "Vi agerar innan problem uppstår"
+      title: t('about.values.expertise.title'),
+      description: t('about.values.expertise.description')
     }
   ];
 
@@ -29,39 +27,35 @@ const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Om oss</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Specialister inom hyresavtalsförvaltning och portföljoptimering
+            {t('about.subtitle')}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-bold mb-4">Oliver Emerson</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('about.founders.oliver.name')}</h3>
               <p className="text-muted-foreground mb-4">
-                Grundare och specialist med lång erfarenhet av förhandling, etablering 
-                och fastighetsrådgivning. Oliver har hjälpt ett flertal företag att 
-                optimera sina hyreskostnader och säkerställa bästa möjliga villkor.
+                {t('about.founders.oliver.description')}
               </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-bold mb-4">Andreas Borgljung</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('about.founders.andreas.name')}</h3>
               <p className="text-muted-foreground mb-4">
-                Medgrundare med djup kunskap inom kommersiella hyresavtal och 
-                portföljförvaltning. Andreas kombinerar strategiskt tänkande med 
-                praktisk erfarenhet för att leverera konkreta resultat.
+                {t('about.founders.andreas.description')}
               </p>
             </CardContent>
           </Card>
         </div>
 
         <div className="bg-muted/30 rounded-lg p-8 md:p-12 mb-12">
-          <h3 className="text-2xl font-bold mb-8 text-center">Varför LeaseWise?</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h3 className="text-2xl font-bold mb-8 text-center">{t('about.values.title')}</h3>
+          <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center space-y-3">
                 <div className="flex justify-center">{value.icon}</div>
@@ -74,12 +68,18 @@ const About = () => {
 
         <Card className="bg-primary text-primary-foreground">
           <CardContent className="pt-6 text-center">
-            <h3 className="text-2xl font-bold mb-4">Pure-play-specialister</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('about.purePlay.title')}</h3>
             <p className="text-lg mb-2">
-              Vi fokuserar enbart på hyresgästens villkor.
+              {t('about.purePlay.description')}
             </p>
-            <p className="text-primary-foreground/80">
-              Vår ersättning kopplas direkt till kundens resultat – vi tjänar när ni sparar.
+          </CardContent>
+        </Card>
+
+        <Card className="bg-card mt-8">
+          <CardContent className="pt-6 text-center">
+            <h3 className="text-2xl font-bold mb-4">{t('about.performance.title')}</h3>
+            <p className="text-lg">
+              {t('about.performance.description')}
             </p>
           </CardContent>
         </Card>

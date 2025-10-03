@@ -1,0 +1,147 @@
+{
+  "navbar": {
+    "services": "Our Service",
+    "about": "About Us",
+    "contact": "Contact",
+    "bookMeeting": "Book Meeting"
+  },
+  "hero": {
+    "title": "Right rent. Right terms.",
+    "titleHighlight": "Always.",
+    "subtitle": "We help companies save money and reduce risks through professional management and renegotiation of lease agreements.",
+    "bookMeeting": "Book Meeting",
+    "contactUs": "Contact Us",
+    "stats": {
+      "transparency": {
+        "value": "100%",
+        "label": "Transparent reporting"
+      },
+      "savings": {
+        "value": "20%",
+        "label": "Average savings"
+      },
+      "missed": {
+        "value": "0",
+        "label": "Missed terminations"
+      },
+      "focus": {
+        "value": "∞",
+        "label": "Results focus"
+      }
+    }
+  },
+  "services": {
+    "title": "How It Works",
+    "subtitle": "A seamless process from start to results",
+    "steps": {
+      "analysis": {
+        "title": "In-Depth Portfolio Analysis",
+        "description": "We conduct a thorough analysis of your existing lease agreements and identify savings opportunities."
+      },
+      "monitoring": {
+        "title": "Continuous Monitoring",
+        "description": "We monitor all termination deadlines and market conditions to ensure optimal circumstances."
+      },
+      "negotiation": {
+        "title": "Professional Negotiation",
+        "description": "Our team actively negotiates to secure the best terms for your premises."
+      },
+      "reporting": {
+        "title": "Transparent Reporting",
+        "description": "You get continuous insight into all activities and savings through our platform."
+      }
+    },
+    "businessModel": {
+      "title": "Our Business Model",
+      "monitoring": {
+        "title": "Monitoring",
+        "description": "Fixed monthly fee based on portfolio size",
+        "price": "From SEK 5,000/month"
+      },
+      "successFee": {
+        "title": "Success Fee",
+        "description": "Only upon successful renegotiation or termination",
+        "price": "20% of savings"
+      },
+      "startup": {
+        "title": "Startup Cost",
+        "description": "One-time fee for in-depth analysis and system integration",
+        "price": "SEK 25,000"
+      }
+    }
+  },
+  "about": {
+    "title": "Expertise in Lease Optimization",
+    "subtitle": "We are specialists with extensive experience from the real estate and lease industry",
+    "founders": {
+      "oliver": {
+        "name": "Oliver Emerson",
+        "title": "Founder & Specialist",
+        "description": "Extensive experience in property management and lease negotiation with focus on commercial premises."
+      },
+      "andreas": {
+        "name": "Andreas Borgljung",
+        "title": "Founder & Specialist",
+        "description": "Broad experience from real estate portfolio optimization with specialized expertise in lease agreement analysis."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "transparency": {
+        "title": "Transparent Communication",
+        "description": "Full transparency in all processes and decisions"
+      },
+      "results": {
+        "title": "Results Focus",
+        "description": "We get paid when you save money"
+      },
+      "expertise": {
+        "title": "Specialist Expertise",
+        "description": "Deep knowledge in lease law and negotiation"
+      }
+    },
+    "purePlay": {
+      "title": "Pure-Play Specialists",
+      "description": "Unlike traditional consulting firms, we are a pure lease agreement specialist. We have no conflicts of interest - our only agenda is to optimize your lease costs and terms. By focusing exclusively on this area, we can offer the industry's best expertise and results."
+    },
+    "performance": {
+      "title": "Performance-Based Compensation",
+      "description": "Our success fee model means we only get paid when we actually deliver results. This ensures our interests are always aligned with yours - when you win, we win."
+    }
+  },
+  "contact": {
+    "title": "Let's Talk About Your Premises",
+    "subtitle": "Book a free meeting and we'll tell you more about how we can help you",
+    "info": {
+      "title": "Contact Information",
+      "email": "info@leasewise.se",
+      "phone": "+46 123 456 789"
+    },
+    "team": {
+      "title": "Our Team",
+      "oliver": "Oliver Emerson - Specialist",
+      "andreas": "Andreas Borgljung - Specialist"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your premises and needs...",
+      "submit": "Send Request",
+      "success": "Thank you for your request! We will get back to you shortly."
+    }
+  },
+  "footer": {
+    "tagline": "Specialists in lease agreement management and portfolio optimization",
+    "contact": "Contact",
+    "email": "Email: info@leasewise.se",
+    "phone": "Phone: +46 123 456 789",
+    "company": "LeaseWise AB",
+    "slogan": "Right rent. Right terms. Always.",
+    "copyright": "© {{year}} LeaseWise AB. All rights reserved."
+  }
+}

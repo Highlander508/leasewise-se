@@ -5,8 +5,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -18,8 +20,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Tack för ditt meddelande!",
-      description: "Vi återkommer inom kort.",
+      title: t('contact.form.success'),
+      description: "",
     });
     setFormData({ name: "", email: "", company: "", message: "" });
   };
@@ -28,19 +30,18 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Kontakta oss</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('contact.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ta kontroll över era hyresavtal – kontakta oss idag
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Hör av dig</h3>
+              <h3 className="text-2xl font-bold mb-6">{t('contact.info.title')}</h3>
               <p className="text-muted-foreground mb-8">
-                Vi hjälper gärna till att analysera era hyresavtal och identifiera 
-                besparingsmöjligheter. Kontakta oss för en kostnadsfri genomgång.
+                {t('contact.subtitle')}
               </p>
             </div>
 
@@ -51,14 +52,14 @@ const Contact = () => {
                   <div>
                     <div className="font-semibold">Email</div>
                     <a href="mailto:info@leasewise.se" className="text-muted-foreground hover:text-secondary">
-                      info@leasewise.se
+                      {t('contact.info.email')}
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-secondary" />
                   <div>
-                    <div className="font-semibold">Telefon</div>
+                    <div className="font-semibold">{t('contact.info.phone')}</div>
                     <a href="tel:+46123456789" className="text-muted-foreground hover:text-secondary">
                       +46 123 456 789
                     </a>
@@ -68,11 +69,9 @@ const Contact = () => {
             </Card>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">Oliver Emerson</h4>
-              <p className="text-sm text-muted-foreground">Grundare & Specialist</p>
-              
-              <h4 className="font-semibold">Andreas Borgljung</h4>
-              <p className="text-sm text-muted-foreground">Medgrundar & Specialist</p>
+              <h4 className="font-semibold">{t('contact.team.title')}</h4>
+              <p className="text-sm text-muted-foreground">{t('contact.team.oliver')}</p>
+              <p className="text-sm text-muted-foreground">{t('contact.team.andreas')}</p>
             </div>
           </div>
 
@@ -81,7 +80,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Input
-                    placeholder="Namn"
+                    placeholder={t('contact.form.namePlaceholder')}
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
@@ -90,7 +89,7 @@ const Contact = () => {
                 <div>
                   <Input
                     type="email"
-                    placeholder="E-post"
+                    placeholder={t('contact.form.emailPlaceholder')}
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
@@ -98,7 +97,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <Input
-                    placeholder="Företag"
+                    placeholder={t('contact.form.companyPlaceholder')}
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     required
@@ -106,7 +105,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <Textarea
-                    placeholder="Meddelande"
+                    placeholder={t('contact.form.messagePlaceholder')}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
@@ -114,7 +113,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Skicka förfrågan
+                  {t('contact.form.submit')}
                 </Button>
               </form>
             </CardContent>
