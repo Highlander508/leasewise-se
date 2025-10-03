@@ -6,7 +6,7 @@ const CustomerBenefits = () => {
     "Lägre lokalkostnader",
     "Professionell förhandling utan egen fastighetsavdelning",
     "Full kontroll på alla avtal och deadlines",
-    "Ni betalar bara bevakningskostnad om vi inte levererar besparing"
+    "Enkelt och effektiv riskhantering"
   ];
 
   return (
