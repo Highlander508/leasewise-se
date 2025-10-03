@@ -4,32 +4,28 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import svTranslation from '@/locales/sv/translation.json';
 import enTranslation from '@/locales/en/translation.json';
 
-const initI18n = async () => {
-  await i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      resources: {
-        sv: {
-          translation: svTranslation,
-        },
-        en: {
-          translation: enTranslation,
-        },
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      sv: {
+        translation: svTranslation,
       },
-      fallbackLng: 'sv',
-      supportedLngs: ['sv', 'en'],
-      debug: false,
-      interpolation: {
-        escapeValue: false,
+      en: {
+        translation: enTranslation,
       },
-      detection: {
-        order: ['localStorage', 'navigator'],
-        caches: ['localStorage'],
-      },
-    });
-};
-
-initI18n();
+    },
+    fallbackLng: 'sv',
+    supportedLngs: ['sv', 'en'],
+    debug: false,
+    interpolation: {
+      escapeValue: false,
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+    },
+  });
 
 export default i18n;
