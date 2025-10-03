@@ -56,7 +56,7 @@ const Services = () => {
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">Enligt offert</div>
               <div className="font-semibold mb-2">Uppstartskostnad</div>
-              <p className="text-sm text-muted-foreground">Engångsavgift för djupanalys och systemintegrering</p>
+              <p className="text-sm text-muted-foreground">Eventuellt behöver vi ta ut en engångsavgift för djupanalys och systemintegrering</p>
             </div>
           </div>
         </div>
