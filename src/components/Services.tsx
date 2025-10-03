@@ -44,9 +44,9 @@ const Services = () => {
           <h3 className="text-2xl font-bold mb-6">Vår affärsmodell</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">5 000 kr/mån</div>
-              <div className="font-semibold mb-2">Bevakning</div>
-              <p className="text-sm text-muted-foreground">Fast månadsavgift baserad på portföljens storlek</p>
+              <div className="text-3xl font-bold text-secondary mb-2">5 000 kr/år</div>
+              <div className="font-semibold mb-2">Bevakning per avtal</div>
+              <p className="text-sm text-muted-foreground">Fast årsavgift per hyresavtal i portföljen</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">20% av besparingen</div>
