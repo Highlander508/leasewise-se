@@ -3,9 +3,9 @@ import { Shield, Briefcase, Lock, Target, Quote } from "lucide-react";
 import dhlLogo from "@/assets/dhl-logo.png";
 import specsaversLogo from "@/assets/specsavers-logo.png";
 import beijerLogo from "@/assets/beijer-logo.png";
-import dollarstoreLogo from "@/assets/dollarstore-logo.webp";
-import jemfixLogo from "@/assets/jemfix-logo.jpg";
-import komatsuLogo from "@/assets/komatsu-logo.jpeg";
+import dollarstoreLogo from "@/assets/dollarstore-logo.png";
+import jemfixLogo from "@/assets/jemfix-logo.png";
+import komatsuLogo from "@/assets/komatsu-logo.png";
 import jumpyardLogo from "@/assets/jumpyard-logo.png";
 const About = () => {
   const testimonials = [{
