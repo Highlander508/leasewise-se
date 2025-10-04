@@ -29,7 +29,7 @@ const ProblemSolution = () => {
                 </p>
                 <div className="bg-secondary/10 border-l-4 border-secondary p-4 rounded">
                   <p className="text-base text-foreground font-medium">
-                    <strong>Exempel:</strong> Ett bolag med 20 hyresavtal sänkte sina kostnader med 10% – vilket motsvarade 1 Mkr per år – bara genom aktiv bevakning och omförhandling.
+                    <strong>Exempel:</strong> Ett bolag med 20 hyresavtal sänkte sina kostnader med 10% – vilket motsvarade 1 Mkr per år – bara genom aktiv bevakning och omförhandling av LeaseWise.
                   </p>
                 </div>
               </div>
