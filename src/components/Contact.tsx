@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="overflow-hidden">
             <CardContent className="p-6 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+              <div>
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-2xl font-bold mb-6">Kontakta oss</h3>
@@ -25,40 +25,32 @@ const Contact = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4 md:space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-primary/5 rounded-lg border-2 border-primary/20 hover:border-primary/40 transition-colors">
                       <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Email</div>
                         <a 
                           href="mailto:info@leasewise.se" 
-                          className="text-lg md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all"
+                          className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all"
                         >
                           info@leasewise.se
                         </a>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-muted/50 rounded-lg">
-                      <Phone className="h-5 w-5 md:h-6 md:w-6 text-secondary mt-1 flex-shrink-0" />
+                    <div className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-primary/5 rounded-lg border-2 border-primary/20 hover:border-primary/40 transition-colors">
+                      <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Telefon</div>
                         <a 
                           href="tel:+46123456789" 
-                          className="text-base md:text-xl font-semibold hover:text-secondary transition-colors"
+                          className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
                         >
                           +46 123 456 789
                         </a>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col justify-center">
-                  <div className="p-6 bg-muted/30 rounded-lg">
-                    <p className="text-sm text-muted-foreground">
-                      Vi svarar normalt inom 24 timmar på vardagar
-                    </p>
                   </div>
                 </div>
               </div>
