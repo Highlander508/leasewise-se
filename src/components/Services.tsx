@@ -46,7 +46,7 @@ const Services = () => {
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">Låg fast avgift</div>
               <div className="font-semibold mb-2">Bevakning per avtal</div>
-              <p className="text-sm text-muted-foreground">En överkomlig fast årsavgift per hyresavtal som täcker all bevakning, rapportering och uppsägningshantering</p>
+              <p className="text-sm text-muted-foreground">En låg årsavgift per hyresavtal som täcker all bevakning, rapportering och uppsägningshantering</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-secondary mb-2">Success fee</div>
