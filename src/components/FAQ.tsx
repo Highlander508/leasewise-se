@@ -8,10 +8,6 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "Hur tar ni betalt?",
-      answer: "5 000 kr per avtal och år för bevakning. Vid omförhandling tillkommer 20% av faktisk besparing. Ingen besparing – inget success fee."
-    },
-    {
       question: "Vad händer om ni inte får ner hyran?",
       answer: "Då betalar ni bara årsavgiften – vi tar inget extra success fee."
     },
