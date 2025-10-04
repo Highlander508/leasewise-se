@@ -58,19 +58,19 @@
     "businessModel": {
       "title": "Our Business Model",
       "monitoring": {
-        "title": "Monitoring",
-        "description": "Fixed monthly fee based on portfolio size",
-        "price": "From SEK 5,000/month"
+        "title": "Low fixed fee",
+        "subtitle": "Monitoring per contract",
+        "description": "An affordable annual fee per lease agreement covering all monitoring, reporting, and termination handling"
       },
       "successFee": {
-        "title": "Success Fee",
-        "description": "Only upon successful renegotiation or termination",
-        "price": "20% of savings"
+        "title": "Success fee",
+        "subtitle": "You pay when you save",
+        "description": "We only charge a portion of the savings we actually deliver – no savings, no cost"
       },
       "startup": {
-        "title": "Startup Cost",
-        "description": "One-time fee for in-depth analysis and system integration",
-        "price": "SEK 25,000"
+        "title": "Tailored solution",
+        "subtitle": "Startup cost",
+        "description": "We prepare a quote based on your portfolio size and complexity – often no additional startup costs for smaller portfolios"
       }
     }
   },

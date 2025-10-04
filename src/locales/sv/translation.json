@@ -58,19 +58,19 @@
     "businessModel": {
       "title": "Vår affärsmodell",
       "monitoring": {
-        "title": "Bevakning",
-        "description": "Fast månadsavgift baserad på portföljens storlek",
-        "price": "Från 5 000 kr/mån"
+        "title": "Låg fast avgift",
+        "subtitle": "Bevakning per avtal",
+        "description": "En överkomlig fast årsavgift per hyresavtal som täcker all bevakning, rapportering och uppsägningshantering"
       },
       "successFee": {
         "title": "Success fee",
-        "description": "Endast vid lyckad omförhandling eller uppsägning",
-        "price": "20% av besparingen"
+        "subtitle": "Du betalar när du sparar",
+        "description": "Vi tar bara ut en andel av de besparingar vi faktiskt levererar – ingen besparing, ingen kostnad"
       },
       "startup": {
-        "title": "Uppstartskostnad",
-        "description": "Engångsavgift för djupanalys och systemintegrering",
-        "price": "25 000 kr"
+        "title": "Skräddarsydd lösning",
+        "subtitle": "Uppstartskostnad",
+        "description": "Vi tar fram en offert baserad på er portföljstorlek och komplexitet – ofta inga extra startkostnader för mindre portföljer"
       }
     }
   },

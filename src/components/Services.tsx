@@ -44,19 +44,19 @@ const Services = () => {
           <h3 className="text-2xl font-bold mb-6">Vår affärsmodell</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">5 000 kr/avtal/år</div>
+              <div className="text-3xl font-bold text-secondary mb-2">Låg fast avgift</div>
               <div className="font-semibold mb-2">Bevakning per avtal</div>
-              <p className="text-sm text-muted-foreground">Fast årsavgift per hyresavtal i portföljen</p>
+              <p className="text-sm text-muted-foreground">En överkomlig fast årsavgift per hyresavtal som täcker all bevakning, rapportering och uppsägningshantering</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">20% av besparingen</div>
-              <div className="font-semibold mb-2">Success fee</div>
-              <p className="text-sm text-muted-foreground">Endast vid lyckad omförhandling eller uppsägning</p>
+              <div className="text-3xl font-bold text-secondary mb-2">Success fee</div>
+              <div className="font-semibold mb-2">Du betalar när du sparar</div>
+              <p className="text-sm text-muted-foreground">Vi tar bara ut en andel av de besparingar vi faktiskt levererar – ingen besparing, ingen kostnad</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">Enligt offert</div>
+              <div className="text-3xl font-bold text-secondary mb-2">Skräddarsydd lösning</div>
               <div className="font-semibold mb-2">Uppstartskostnad</div>
-              <p className="text-sm text-muted-foreground">Eventuellt behöver vi ta ut en engångsavgift för djupanalys och systemintegrering</p>
+              <p className="text-sm text-muted-foreground">Vi tar fram en offert baserad på er portföljstorlek och komplexitet – ofta inga extra startkostnader för mindre portföljer</p>
             </div>
           </div>
         </div>
