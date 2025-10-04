@@ -4,10 +4,10 @@ import { Mail, Phone } from "lucide-react";
 const Contact = () => {
 
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Kontakta oss idag</h2>
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Kontakta oss idag</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Fyll i formuläret så återkommer vi inom kort
           </p>
@@ -25,27 +25,27 @@ const Contact = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-4 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 hover:border-primary/40 transition-colors">
-                      <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                      <div>
+                  <div className="space-y-4 md:space-y-6">
+                    <div className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-primary/5 rounded-lg border-2 border-primary/20 hover:border-primary/40 transition-colors">
+                      <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
+                      <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Email</div>
                         <a 
                           href="mailto:info@leasewise.se" 
-                          className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
+                          className="text-lg md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all"
                         >
                           info@leasewise.se
                         </a>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 p-6 bg-muted/50 rounded-lg">
-                      <Phone className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
-                      <div>
+                    <div className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-muted/50 rounded-lg">
+                      <Phone className="h-5 w-5 md:h-6 md:w-6 text-secondary mt-1 flex-shrink-0" />
+                      <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Telefon</div>
                         <a 
                           href="tel:+46123456789" 
-                          className="text-xl font-semibold hover:text-secondary transition-colors"
+                          className="text-base md:text-xl font-semibold hover:text-secondary transition-colors"
                         >
                           +46 123 456 789
                         </a>
