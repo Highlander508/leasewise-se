@@ -15,8 +15,8 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto">
           <Card className="overflow-hidden">
-            <CardContent className="p-12">
-              <div className="grid md:grid-cols-2 gap-12">
+            <CardContent className="p-6 md:p-12">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-2xl font-bold mb-6">Kontakta oss</h3>
@@ -54,16 +54,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="space-y-6 flex flex-col justify-center">
-                  <div>
-                    <h4 className="font-semibold text-lg mb-4">Vårt team</h4>
-                    <div className="space-y-3">
-                      <p className="text-muted-foreground">Oliver Emerson - Specialist</p>
-                      <p className="text-muted-foreground">Andreas Borgljung - Specialist</p>
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t">
+                <div className="flex flex-col justify-center">
+                  <div className="p-6 bg-muted/30 rounded-lg">
                     <p className="text-sm text-muted-foreground">
                       Vi svarar normalt inom 24 timmar på vardagar
                     </p>
