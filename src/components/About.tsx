@@ -91,7 +91,7 @@ const About = () => {
           <h3 className="text-2xl font-bold text-center mb-8">Företag som litar på oss</h3>
           <div className="relative overflow-hidden bg-muted/30 rounded-lg py-8">
             <div className="flex animate-scroll">
-              {[...clientLogos, ...clientLogos].map((logo, index) => <div key={index} className="flex-shrink-0 mx-8 flex items-center justify-center" style={{
+              {[...clientLogos, ...clientLogos].map((logo, index) => <div key={index} className="flex-shrink-0 mx-4 flex items-center justify-center" style={{
               minWidth: '150px'
             }}>
                   <div className="bg-background rounded-lg p-6 shadow-sm border h-32 flex items-center justify-center">
