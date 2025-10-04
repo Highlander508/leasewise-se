@@ -1,16 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
-
 const Contact = () => {
-
-  return (
-    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
+  return <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Kontakta oss idag</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Fyll i formuläret så återkommer vi inom kort
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Mejla idag så återkommer vi inom kort</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -30,10 +25,7 @@ const Contact = () => {
                       <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Email</div>
-                        <a 
-                          href="mailto:info@leasewise.se" 
-                          className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all"
-                        >
+                        <a href="mailto:info@leasewise.se" className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all">
                           info@leasewise.se
                         </a>
                       </div>
@@ -43,10 +35,7 @@ const Contact = () => {
                       <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Telefon</div>
-                        <a 
-                          href="tel:+46123456789" 
-                          className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
-                        >
+                        <a href="tel:+46123456789" className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
                           +46 123 456 789
                         </a>
                       </div>
@@ -58,8 +47,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
