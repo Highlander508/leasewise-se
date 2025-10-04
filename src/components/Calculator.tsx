@@ -9,8 +9,8 @@ const Calculator = () => {
   const [averageRent, setAverageRent] = useState(500000);
 
   const totalRent = numberOfContracts * averageRent;
-  const minSavings = Math.round(totalRent * 0.05);
-  const maxSavings = Math.round(totalRent * 0.15);
+  const minSavings = Math.round(totalRent * 0.10);
+  const maxSavings = Math.round(totalRent * 0.25);
 
   const formatNumber = (num: number) => {
     return new Intl.NumberFormat('sv-SE').format(num);
