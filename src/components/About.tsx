@@ -1,12 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lock, Target, Quote } from "lucide-react";
-import dhlLogo from "@/assets/dhl-logo.png";
 import specsaversLogo from "@/assets/specsavers-logo.png";
+import jumpyardLogo from "@/assets/jumpyard-logo.png";
 import beijerLogo from "@/assets/beijer-logo.png";
 import dollarstoreLogo from "@/assets/dollarstore-logo.webp";
 import jemfixLogo from "@/assets/jemfix-logo.jpg";
 import komatsuLogo from "@/assets/komatsu-logo.jpeg";
-import jumpyardLogo from "@/assets/jumpyard-logo.png";
 const About = () => {
   const testimonials = [{
     quote: "LeaseWise hjälpte oss att sänka våra lokalkostnader med 12% över hela portföljen. Deras expertis och proaktiva bevakning har varit ovärderlig.",
@@ -25,11 +24,11 @@ const About = () => {
     company: "Fitness Network"
   }];
   const clientLogos = [{
-    src: dhlLogo,
-    alt: "DHL Logo"
-  }, {
     src: specsaversLogo,
     alt: "Specsavers Logo"
+  }, {
+    src: jumpyardLogo,
+    alt: "JumpYard Logo"
   }, {
     src: beijerLogo,
     alt: "Beijer Byggmaterial Logo"
@@ -42,9 +41,6 @@ const About = () => {
   }, {
     src: komatsuLogo,
     alt: "Komatsu Logo"
-  }, {
-    src: jumpyardLogo,
-    alt: "JumpYard Logo"
   }];
   const values = [{
     icon: <Shield className="h-8 w-8 text-secondary" />,
