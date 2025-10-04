@@ -1,5 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lock, Target, Quote } from "lucide-react";
+import dhlLogo from "@/assets/dhl-logo.png";
+import specsaversLogo from "@/assets/specsavers-logo.png";
+import beijerLogo from "@/assets/beijer-logo.png";
+import dollarstoreLogo from "@/assets/dollarstore-logo.webp";
+import jemfixLogo from "@/assets/jemfix-logo.jpg";
+import komatsuLogo from "@/assets/komatsu-logo.jpeg";
+import jumpyardLogo from "@/assets/jumpyard-logo.png";
 const About = () => {
   const testimonials = [{
     quote: "LeaseWise hjälpte oss att sänka våra lokalkostnader med 12% över hela portföljen. Deras expertis och proaktiva bevakning har varit ovärderlig.",
@@ -18,23 +25,26 @@ const About = () => {
     company: "Fitness Network"
   }];
   const clientLogos = [{
-    name: "ICA",
-    alt: "ICA Logo"
+    src: dhlLogo,
+    alt: "DHL Logo"
   }, {
-    name: "Apoteket",
-    alt: "Apoteket Logo"
-  }, {
-    name: "Specsavers",
+    src: specsaversLogo,
     alt: "Specsavers Logo"
   }, {
-    name: "24/7 Fitness",
-    alt: "24/7 Fitness Logo"
+    src: beijerLogo,
+    alt: "Beijer Byggmaterial Logo"
   }, {
-    name: "Bilprovningen",
-    alt: "Bilprovningen Logo"
+    src: dollarstoreLogo,
+    alt: "DollarStore Logo"
   }, {
-    name: "Hemköp",
-    alt: "Hemköp Logo"
+    src: jemfixLogo,
+    alt: "Jem & Fix Logo"
+  }, {
+    src: komatsuLogo,
+    alt: "Komatsu Logo"
+  }, {
+    src: jumpyardLogo,
+    alt: "JumpYard Logo"
   }];
   const values = [{
     icon: <Shield className="h-8 w-8 text-secondary" />,
@@ -84,10 +94,12 @@ const About = () => {
               {[...clientLogos, ...clientLogos].map((logo, index) => <div key={index} className="flex-shrink-0 mx-8 flex items-center justify-center" style={{
               minWidth: '150px'
             }}>
-                  <div className="bg-background rounded-lg p-6 shadow-sm border">
-                    <p className="text-lg font-semibold text-center text-muted-foreground">
-                      {logo.name}
-                    </p>
+                  <div className="bg-background rounded-lg p-6 shadow-sm border h-32 flex items-center justify-center">
+                    <img 
+                      src={logo.src} 
+                      alt={logo.alt}
+                      className="max-h-20 max-w-full w-auto h-auto object-contain"
+                    />
                   </div>
                 </div>)}
             </div>
