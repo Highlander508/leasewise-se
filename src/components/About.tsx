@@ -84,19 +84,17 @@ const About = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Företag som litar på oss</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-            {clientLogos.map((logo, index) => (
-              <div key={index} className="flex items-center justify-center">
-                <div className="bg-background rounded-lg p-4 shadow-sm border h-24 w-full flex items-center justify-center">
-                  <img 
-                    src={logo.src} 
-                    alt={logo.alt}
-                    className="max-h-16 max-w-full w-auto h-auto object-contain"
-                  />
-                </div>
-              </div>
-            ))}
+          <h3 className="text-2xl font-bold text-center mb-8">Några företag som litar på oss</h3>
+          <div className="relative overflow-hidden bg-muted/30 rounded-lg py-8">
+            <div className="flex animate-scroll">
+              {[...clientLogos, ...clientLogos].map((logo, index) => <div key={index} className="flex-shrink-0 mx-4 flex items-center justify-center" style={{
+              minWidth: '150px'
+            }}>
+                  <div className="bg-background rounded-lg p-6 shadow-sm border h-32 flex items-center justify-center">
+                    <img src={logo.src} alt={logo.alt} className="max-h-20 max-w-full w-auto h-auto object-contain" />
+                  </div>
+                </div>)}
+            </div>
           </div>
         </div>
 
