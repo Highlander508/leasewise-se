@@ -84,7 +84,7 @@ const About = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Några företag som litar på oss</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">Några av de företag vi arbetat med</h3>
           <div className="relative overflow-hidden bg-muted/30 rounded-lg py-8">
             <div className="flex animate-scroll">
               {[...clientLogos, ...clientLogos].map((logo, index) => <div key={index} className="flex-shrink-0 mx-4 flex items-center justify-center" style={{
