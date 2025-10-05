@@ -19,13 +19,13 @@ const ProblemSolution = () => {
                   Företag förlorar miljoner på outnyttjade möjligheter
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Många företag saknar en aktiv strategi för sina hyresavtal – och är ofta inte ens medvetna om att det finns betydande värde att hämta genom omförhandlingar. Resultatet blir att viktiga uppsägningstider missas, hyresvillkor aldrig ifrågasätts och lokalkostnader stiger i onödan.
+                  Många företag saknar strategi för sina hyresavtal. Resultatet? Missade uppsägningstider, dåliga villkor och onödigt höga lokalkostnader.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Hyresjuridik, förhandlingsteknik, branschkunskap och marknadsinsikt är specialistkompetenser som få företag har internt. Det räcker inte att bara 'hålla koll' – varje förhandling kräver djup förståelse för aktuella marknadshyror, juridiska fallgropar och vilka villkor som är förhandlingsbara. Att bygga upp egen expertis är både dyrt och tidskrävande.
+                  Hyresjuridik och förhandling kräver specialistkompetens som få har internt. Att bygga egen expertis är dyrt och tidskrävande.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Med LeaseWise får ni tillgång till erfarna specialister med mångårig branscherfarenhet som gör detta komplicerade arbete åt er. Vi bevakar varje avtal, känner marknaden, förhandlar professionellt och säkerställer att ni alltid har rätt villkor – en kostnadseffektiv lösning där vi bara tjänar när ni sparar.
+                  LeaseWise ger er erfarna specialister som bevakar era avtal och förhandlar professionellt – ni betalar bara när ni sparar.
                 </p>
                 <div className="bg-secondary/10 border-l-4 border-secondary p-4 rounded">
                   <p className="text-base text-foreground font-medium">
