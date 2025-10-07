@@ -173,5 +173,14 @@
     "company": "LeaseWise AB",
     "slogan": "Right rent. Right terms. Always.",
     "copyright": "© {{year}} LeaseWise AB. All rights reserved."
+  },
+  "seo": {
+    "title": "LeaseWise AB - Lease Management & Portfolio Optimization",
+    "description": "Reduce your rental costs by 10-25%. LeaseWise monitors, terminates and renegotiates leases. Success fee model - you only pay when we save.",
+    "keywords": "lease agreement, lease management, renegotiation, portfolio optimization, rental costs, commercial lease, lease management, reduce rent, lease specialist",
+    "ogTitle": "LeaseWise AB - Reduce Rental Costs by 10-25%",
+    "ogDescription": "We monitor, terminate and renegotiate lease agreements for companies. Success fee model - only pay when we save money.",
+    "twitterTitle": "LeaseWise AB - Reduce Rental Costs by 10-25%",
+    "twitterDescription": "We monitor and renegotiate lease agreements. Only pay when we save."
   }
 }
