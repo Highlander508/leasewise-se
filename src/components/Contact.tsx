@@ -6,10 +6,10 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30" aria-labelledby="contact-title">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{t('contact.title')}</h2>
+          <h2 id="contact-title" className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{t('contact.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Mejla idag så återkommer vi inom kort</p>
         </div>
 

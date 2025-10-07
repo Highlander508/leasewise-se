@@ -61,10 +61,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-20 px-4" aria-labelledby="about-title">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h2>
+          <h2 id="about-title" className="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('about.subtitle')}
           </p>
@@ -93,14 +93,15 @@ const About = () => {
 
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8">Några av de företag vi arbetat med</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4" role="list" aria-label="Kunder och partners">
             {clientLogos.map((logo, index) => (
-              <div key={index} className="flex items-center justify-center">
+              <div key={index} className="flex items-center justify-center" role="listitem">
                 <div className="bg-background rounded-lg p-4 shadow-sm border h-24 w-full flex items-center justify-center">
                   <img 
                     src={logo.src} 
                     alt={logo.alt} 
-                    className="max-h-16 max-w-full w-auto h-auto object-contain" 
+                    className="max-h-16 max-w-full w-auto h-auto object-contain"
+                    loading="lazy"
                   />
                 </div>
               </div>

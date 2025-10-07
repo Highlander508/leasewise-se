@@ -11,18 +11,20 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
-      <ProblemSolution />
-      <Calculator />
-      <Services />
-      <CustomerBenefits />
-      <About />
-      <FAQ />
-      <Contact />
+      <main>
+        <Hero />
+        <ProblemSolution />
+        <Calculator />
+        <Services />
+        <CustomerBenefits />
+        <About />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

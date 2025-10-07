@@ -25,9 +25,9 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4" aria-labelledby="faq-title">
       <div className="container mx-auto max-w-3xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h2 id="faq-title" className="text-4xl md:text-5xl font-bold text-center mb-12">
           {t('faq.title')}
         </h2>
 

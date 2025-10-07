@@ -29,10 +29,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 bg-muted/30">
+    <section id="services" className="py-20 px-4 bg-muted/30" aria-labelledby="services-title">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('services.title')}</h2>
+          <h2 id="services-title" className="text-4xl md:text-5xl font-bold mb-4">{t('services.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('services.subtitle')}
           </p>
