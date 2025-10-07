@@ -1,10 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
-  return <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
+  const { t } = useTranslation();
+
+  return (
+    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Kontakta oss idag</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{t('contact.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Mejla idag så återkommer vi inom kort</p>
         </div>
 
@@ -14,7 +19,7 @@ const Contact = () => {
               <div>
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-2xl font-bold mb-6">Kontakta oss</h3>
+                    <h3 className="text-2xl font-bold mb-6">{t('navbar.contact')}</h3>
                     <p className="text-muted-foreground">
                       Hör av dig till oss så diskuterar vi hur vi kan hjälpa er att optimera era hyreskostnader
                     </p>
@@ -47,6 +52,8 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

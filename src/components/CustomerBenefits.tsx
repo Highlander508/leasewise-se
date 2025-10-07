@@ -1,11 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const CustomerBenefits = () => {
+  const { t } = useTranslation();
+  
   const benefits = [
-    "Lägre lokalkostnader",
-    "Professionell förhandling utan egen fastighetsavdelning",
-    "Full kontroll på alla avtal och deadlines",
+    t('benefits.items.costs'),
+    t('benefits.items.negotiation'),
+    t('benefits.items.control'),
     "Enkelt och effektiv riskhantering",
     "Transparens i ersättningen – ni vet alltid vad ni betalar för"
   ];
@@ -14,7 +17,7 @@ const CustomerBenefits = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          Vad ni får med LeaseWise
+          {t('benefits.title')}
         </h2>
         
         <div className="grid md:grid-cols-2 gap-6">
