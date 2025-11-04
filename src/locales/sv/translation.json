@@ -182,5 +182,12 @@
     "ogDescription": "Vi bevakar, säger upp och omförhandlar hyresavtal åt företag. Success fee-modell - betala bara när vi sparar pengar.",
     "twitterTitle": "LeaseWise AB - Sänk hyreskostnader med 10-25%",
     "twitterDescription": "Vi bevakar och omförhandlar hyresavtal. Betala bara när vi sparar."
+  },
+  "passwordGate": {
+    "title": "Sidan är under utveckling",
+    "description": "Denna webbplats är för närvarande under utveckling. Vänligen ange lösenordet för att fortsätta.",
+    "placeholder": "Ange lösenord",
+    "submit": "Fortsätt",
+    "error": "Fel lösenord. Försök igen."
   }
 }

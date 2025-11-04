@@ -182,5 +182,12 @@
     "ogDescription": "We monitor, terminate and renegotiate lease agreements for companies. Success fee model - only pay when we save money.",
     "twitterTitle": "LeaseWise AB - Reduce Rental Costs by 10-25%",
     "twitterDescription": "We monitor and renegotiate lease agreements. Only pay when we save."
+  },
+  "passwordGate": {
+    "title": "Site Under Development",
+    "description": "This website is currently under development. Please enter the password to continue.",
+    "placeholder": "Enter password",
+    "submit": "Continue",
+    "error": "Incorrect password. Please try again."
   }
 }
