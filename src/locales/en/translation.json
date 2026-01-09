@@ -42,6 +42,10 @@
         "title": "Monitoring",
         "description": "We register and monitor all your lease agreements and ensure no deadlines are missed."
       },
+      "strategy": {
+        "title": "Strategy",
+        "description": "We contact you well in advance before termination is required to start the project and discuss your strategy for the upcoming period."
+      },
       "termination": {
         "title": "Termination",
         "description": "We handle terminations on time to open up for negotiations."
