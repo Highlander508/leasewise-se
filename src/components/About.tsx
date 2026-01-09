@@ -59,37 +59,19 @@ const About = () => {
 
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8">Några av de företag vi arbetat med</h3>
-          <div className="space-y-4" role="list" aria-label="Kunder och partners">
-            {/* Top row - 5 logos on desktop */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {clientLogos.slice(0, 5).map((logo, index) => (
-                <div key={index} className="flex items-center justify-center" role="listitem">
-                  <div className="bg-background rounded-lg p-4 shadow-sm border h-24 w-full flex items-center justify-center">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.alt} 
-                      className="max-h-16 max-w-full w-auto h-auto object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" role="list" aria-label="Kunder och partners">
+            {clientLogos.map((logo, index) => (
+              <div key={index} className="flex items-center justify-center" role="listitem">
+                <div className="bg-background rounded-lg p-4 shadow-sm border h-24 w-full flex items-center justify-center">
+                  <img 
+                    src={logo.src} 
+                    alt={logo.alt} 
+                    className="max-h-16 max-w-full w-auto h-auto object-contain"
+                    loading="lazy"
+                  />
                 </div>
-              ))}
-            </div>
-            {/* Bottom row - 4 logos centered with offset on desktop */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:px-[calc(10%+0.5rem)]">
-              {clientLogos.slice(5).map((logo, index) => (
-                <div key={index + 5} className="flex items-center justify-center" role="listitem">
-                  <div className="bg-background rounded-lg p-4 shadow-sm border h-24 w-full flex items-center justify-center">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.alt} 
-                      className="max-h-16 max-w-full w-auto h-auto object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
 
