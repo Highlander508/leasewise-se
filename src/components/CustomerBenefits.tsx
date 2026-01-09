@@ -36,7 +36,7 @@ const CustomerBenefits = () => {
         </div>
         
         <p className="text-center text-muted-foreground mt-8 text-lg">
-          Vi arbetar med allt från kedjor till mindre bolag – inom retail, apotek, optik, gym och bilprovning.
+          Vi arbetar med allt från kedjor till mindre bolag – inom retail, apotek, optik, gym, bilprovning, lager och logistik.
         </p>
       </div>
     </section>
