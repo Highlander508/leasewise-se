@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lock, Target, Quote } from "lucide-react";
+import { Shield, Briefcase, Lock, Target } from "lucide-react";
 import specsaversLogo from "@/assets/specsavers-logo.png";
 import jumpyardLogo from "@/assets/jumpyard-logo.png";
 import beijerLogo from "@/assets/beijer-logo.png";
@@ -12,27 +12,6 @@ import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { t } = useTranslation();
-
-  const testimonials = [
-    {
-      quote: "LeaseWise hjälpte oss att sänka våra lokalkostnader med 12% över hela portföljen. Deras expertis och proaktiva bevakning har varit ovärderlig.",
-      name: "Maria Andersson",
-      role: "CFO",
-      company: "Retail Chain AB"
-    },
-    {
-      quote: "Tack vare LeaseWise missade vi aldrig en uppsägningsfrist och kunde omförhandla flera avtal till betydligt bättre villkor.",
-      name: "Erik Johansson",
-      role: "Fastighetschef",
-      company: "Apotek Gruppen"
-    },
-    {
-      quote: "Professionell och transparent process från start till mål. Vi sparade 800 000 kr första året och har full kontroll på alla våra 15 avtal.",
-      name: "Sara Lundqvist",
-      role: "VD",
-      company: "Fitness Network"
-    }
-  ];
 
   const clientLogos = [
     { src: specsaversLogo, alt: "Specsavers Logo" },
@@ -64,6 +43,7 @@ const About = () => {
     }
   ];
 
+
   return (
     <section id="about" className="py-20 px-4" aria-labelledby="about-title">
       <div className="container mx-auto max-w-6xl">
@@ -74,26 +54,6 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-8">Vad våra kunder säger</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6 pb-6">
-                  <Quote className="h-8 w-8 text-secondary mb-4" />
-                  <p className="text-muted-foreground mb-4 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="border-t pt-4">
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    <p className="text-sm text-secondary font-medium">{testimonial.company}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8">Några av de företag vi arbetat med</h3>
