@@ -8,6 +8,7 @@ import jemfixLogo from "@/assets/jemfix-logo.jpg";
 import dhlLogo from "@/assets/dhl-logo.png";
 import allegoLogo from "@/assets/allego-logo.webp";
 import st1Logo from "@/assets/st1-logo.png";
+import fitness24sevenLogo from "@/assets/fitness24seven-logo.png";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -21,7 +22,8 @@ const About = () => {
     { src: jemfixLogo, alt: "Jem & Fix Logo" },
     { src: dhlLogo, alt: "DHL Logo" },
     { src: allegoLogo, alt: "Allego Logo" },
-    { src: st1Logo, alt: "St1 Logo" }
+    { src: st1Logo, alt: "St1 Logo" },
+    { src: fitness24sevenLogo, alt: "Fitness 24 Seven Logo" }
   ];
 
   const values = [
