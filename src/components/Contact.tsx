@@ -1,12 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
-
 const Contact = () => {
-  const { t } = useTranslation();
-
-  return (
-    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30" aria-labelledby="contact-title">
+  const {
+    t
+  } = useTranslation();
+  return <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30" aria-labelledby="contact-title">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8 md:mb-16">
           <h2 id="contact-title" className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{t('contact.title')}</h2>
@@ -40,9 +39,7 @@ const Contact = () => {
                       <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Telefon</div>
-                        <a href="tel:+46123456789" className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-                          +46 123 456 789
-                        </a>
+                        <a className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors" href="tel:+46769454653">+46 76 945 46 53</a>
                       </div>
                     </div>
                   </div>
@@ -52,8 +49,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
