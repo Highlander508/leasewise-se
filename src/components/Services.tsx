@@ -1,4 +1,4 @@
-import { Eye, FileX, MessageSquare, TrendingDown } from "lucide-react";
+import { Eye, FileX, MessageSquare, TrendingDown, CalendarClock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
@@ -10,6 +10,11 @@ const Services = () => {
       icon: <Eye className="h-12 w-12 text-secondary" />,
       title: t('services.steps.monitoring.title'),
       description: t('services.steps.monitoring.description')
+    },
+    {
+      icon: <CalendarClock className="h-12 w-12 text-secondary" />,
+      title: t('services.steps.strategy.title'),
+      description: t('services.steps.strategy.description')
     },
     {
       icon: <FileX className="h-12 w-12 text-secondary" />,
@@ -38,7 +43,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
           {steps.map((step, index) => (
             <Card key={index} className="relative hover-scale">
               <div className="absolute -top-4 left-6 bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold">

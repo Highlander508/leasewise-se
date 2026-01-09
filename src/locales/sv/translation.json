@@ -42,6 +42,10 @@
         "title": "Bevakning",
         "description": "Vi registrerar och bevakar alla era hyresavtal och säkerställer att inga deadlines missas."
       },
+      "strategy": {
+        "title": "Strategi",
+        "description": "Vi tar kontakt med er i god tid innan uppsägning behöver göras för att påbörja projektet och diskutera er strategi för kommande period."
+      },
       "termination": {
         "title": "Uppsägning",
         "description": "Vi hanterar uppsägningar i rätt tid för att öppna upp för förhandlingar."
