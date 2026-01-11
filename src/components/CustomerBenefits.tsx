@@ -10,7 +10,8 @@ const CustomerBenefits = () => {
     t('benefits.items.negotiation'),
     t('benefits.items.control'),
     "Enkelt och effektiv riskhantering",
-    "Transparens i ersättningen – ni vet alltid vad ni betalar för"
+    "Transparens i ersättningen – ni vet alltid vad ni betalar för",
+    "Avlastning i varje steg av hyresarbetet"
   ];
 
   return (
