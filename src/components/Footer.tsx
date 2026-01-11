@@ -20,7 +20,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">{t('footer.contact')}</h3>
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p>{t('footer.email')}</p>
-              <p>Telefon: <PhoneLink className="hover:text-primary-foreground transition-colors" /></p>
+              <p><PhoneLink className="hover:text-primary-foreground transition-colors">📞 Ring oss</PhoneLink></p>
             </div>
           </div>
           
