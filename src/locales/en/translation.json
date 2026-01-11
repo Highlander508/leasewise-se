@@ -11,6 +11,7 @@
     "subtitle": "We help companies monitor, terminate and renegotiate lease agreements – so you never pay more than you should.",
     "bookMeeting": "Book Meeting",
     "contactUs": "Contact Us Today",
+    "responseTime": "Response within 24 hours",
     "stats": {
       "transparency": {
         "value": "100%",
@@ -32,7 +33,12 @@
   },
   "problem": {
     "title": "Companies lose millions on untapped opportunities",
-    "description": "Many companies lack an active strategy for their lease agreements – and are often not even aware that there is significant value to be gained through renegotiations. The result is that critical termination deadlines are missed, lease terms are never questioned, and premises costs rise unnecessarily.\n\nLease law, negotiation techniques, industry knowledge, and market insight are specialist competencies that few companies have internally. Simply 'keeping track' is not enough – each negotiation requires deep understanding of current market rents, legal pitfalls, and which terms are negotiable. Building internal expertise is both expensive and time-consuming.\n\nWith LeaseWise, you gain access to experienced specialists with years of industry experience who do this complex work for you. We monitor every agreement, know the market, negotiate professionally, and ensure you always have the right terms – a cost-effective solution where we only earn when you save."
+    "description": "Many companies lack an active strategy for their lease agreements – and are often not even aware that there is significant value to be gained through renegotiations. The result is that critical termination deadlines are missed, lease terms are never questioned, and premises costs rise unnecessarily.\n\nLease law, negotiation techniques, industry knowledge, and market insight are specialist competencies that few companies have internally. Simply 'keeping track' is not enough – each negotiation requires deep understanding of current market rents, legal pitfalls, and which terms are negotiable. Building internal expertise is both expensive and time-consuming.\n\nWith LeaseWise, you gain access to experienced specialists with years of industry experience who do this complex work for you. We monitor every agreement, know the market, negotiate professionally, and ensure you always have the right terms – a cost-effective solution where we only earn when you save.",
+    "intro": "Many companies lack a strategy for their lease agreements. The result? Missed termination deadlines, poor terms, and unnecessarily high premises costs.",
+    "expertise": "Lease law and negotiation require specialist expertise that few have internally. Building your own expertise is expensive and time-consuming.",
+    "solution": "LeaseWise provides you with experienced specialists who monitor your agreements and negotiate professionally – you only pay when you save.",
+    "exampleTitle": "Example:",
+    "exampleText": "A company with 20 lease agreements reduced their costs by 10% – equivalent to 1 MSEK per year – just through active monitoring and renegotiation by LeaseWise."
   },
   "services": {
     "title": "How It Works",
@@ -84,8 +90,12 @@
       "costs": "Lower premises costs",
       "negotiation": "Professional negotiation without your own property department",
       "control": "Full control of all agreements and deadlines",
-      "risk": "Simple and risk-free – we only charge when we deliver savings"
-    }
+      "risk": "Simple and risk-free – we only charge when we deliver savings",
+      "riskManagement": "Simple and effective risk management",
+      "transparency": "Transparency in compensation – you always know what you pay for",
+      "support": "Relief at every step of the lease process"
+    },
+    "industries": "We work with everything from chains to smaller companies – in retail, pharmacy, opticians, gyms, vehicle inspection, warehouse and logistics."
   },
   "calculator": {
     "title": "Calculate Your Potential Savings",
@@ -93,11 +103,13 @@
     "averageRent": "Average annual rent per contract (SEK)",
     "totalRent": "Total annual rent",
     "potentialSavings": "Potential savings",
-    "result": "With {{contracts}} contracts at {{rent}} SEK/year, you can save between {{minSavings}} - {{maxSavings}} SEK over a contract period."
+    "result": "With {{contracts}} contracts at {{rent}} SEK/year, you can save between {{minSavings}} - {{maxSavings}} SEK over a contract period.",
+    "disclaimer": "The calculation shows a typical range based on market data and our experience. The exact savings depend on location, agreement and landlord."
   },
   "about": {
     "title": "About Us",
     "subtitle": "LeaseWise was founded with a simple idea: to give companies control over their lease agreements and ensure they always have the right terms. We combine business acumen, property knowledge, and extensive experience in lease negotiations to create value for our customers.",
+    "clientsTitle": "Some of the companies we've worked with",
     "founders": {
       "oliver": {
         "name": "Oliver Emerson",
@@ -145,7 +157,7 @@
   },
   "contact": {
     "title": "Contact Us Today",
-    "subtitle": "Fill in the form and we'll get back to you shortly",
+    "subtitle": "Email us today and we'll get back to you shortly",
     "info": {
       "title": "Contact Information",
       "email": "info@leasewise.se",
@@ -156,6 +168,10 @@
       "oliver": "Oliver Emerson - Specialist",
       "andreas": "Andreas Borgljung - Specialist"
     },
+    "description": "Get in touch with us and we'll discuss how we can help you optimize your lease costs",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "callUs": "Call us",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -176,7 +192,8 @@
     "phone": "Phone: +46 123 456 789",
     "company": "LeaseWise",
     "slogan": "Right rent. Right terms. Always.",
-    "copyright": "© {{year}} LeaseWise. All rights reserved."
+    "copyright": "© {{year}} LeaseWise. All rights reserved.",
+    "callUs": "Call us"
   },
   "seo": {
     "title": "LeaseWise - Lease Management & Portfolio Optimization",

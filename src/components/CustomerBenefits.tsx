@@ -9,9 +9,9 @@ const CustomerBenefits = () => {
     t('benefits.items.costs'),
     t('benefits.items.negotiation'),
     t('benefits.items.control'),
-    "Enkelt och effektiv riskhantering",
-    "Transparens i ersättningen – ni vet alltid vad ni betalar för",
-    "Avlastning i varje steg av hyresarbetet"
+    t('benefits.items.riskManagement'),
+    t('benefits.items.transparency'),
+    t('benefits.items.support')
   ];
 
   return (
@@ -37,7 +37,7 @@ const CustomerBenefits = () => {
         </div>
         
         <p className="text-center text-muted-foreground mt-8 text-lg">
-          Vi arbetar med allt från kedjor till mindre bolag – inom retail, apotek, optik, gym, bilprovning, lager och logistik.
+          {t('benefits.industries')}
         </p>
       </div>
     </section>

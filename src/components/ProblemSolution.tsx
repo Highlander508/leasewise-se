@@ -21,17 +21,17 @@ const ProblemSolution = () => {
                   {t('problem.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Många företag saknar strategi för sina hyresavtal. Resultatet? Missade uppsägningstider, dåliga villkor och onödigt höga lokalkostnader.
+                  {t('problem.intro')}
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Hyresjuridik och förhandling kräver specialistkompetens som få har internt. Att bygga egen expertis är dyrt och tidskrävande.
+                  {t('problem.expertise')}
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  LeaseWise ger er erfarna specialister som bevakar era avtal och förhandlar professionellt – ni betalar bara när ni sparar.
+                  {t('problem.solution')}
                 </p>
                 <div className="bg-secondary/10 border-l-4 border-secondary p-4 rounded">
                   <p className="text-base text-foreground font-medium">
-                    <strong>Exempel:</strong> Ett bolag med 20 hyresavtal sänkte sina kostnader med 10% – vilket motsvarade 1 Mkr per år – bara genom aktiv bevakning och omförhandling av LeaseWise.
+                    <strong>{t('problem.exampleTitle')}</strong> {t('problem.exampleText')}
                   </p>
                 </div>
               </div>

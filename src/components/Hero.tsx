@@ -28,7 +28,7 @@ const Hero = () => {
             </Button>
           </div>
           <p className="text-sm text-muted-foreground pt-2">
-            Svar inom 24 timmar
+            {t('hero.responseTime')}
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16">
