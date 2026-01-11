@@ -81,11 +81,11 @@ const About = () => {
 
         <div className="bg-muted/30 rounded-lg p-8 md:p-12 mb-12">
           <h3 className="text-2xl font-bold mb-8 text-center">{t('about.values.title')}</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center space-y-3">
+              <div key={index} className="text-center space-y-3 px-2">
                 <div className="flex justify-center">{value.icon}</div>
-                <h4 className="font-semibold text-lg">{value.title}</h4>
+                <h4 className="font-semibold text-base md:text-lg break-words hyphens-auto">{value.title}</h4>
               </div>
             ))}
           </div>
