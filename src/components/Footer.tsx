@@ -1,5 +1,6 @@
 import logo from "@/assets/leasewise-logo.png";
 import { useTranslation } from "react-i18next";
+import PhoneLink from "@/components/PhoneLink";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">{t('footer.contact')}</h3>
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p>{t('footer.email')}</p>
-              <p>{t('footer.phone')}</p>
+              <p>Telefon: <PhoneLink className="hover:text-primary-foreground transition-colors" /></p>
             </div>
           </div>
           

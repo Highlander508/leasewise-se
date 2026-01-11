@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import PhoneLink from "@/components/PhoneLink";
 const Contact = () => {
   const {
     t
@@ -39,7 +40,7 @@ const Contact = () => {
                       <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">Telefon</div>
-                        <a className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors" href="tel:+46769454653">+46 76 945 46 53</a>
+                        <PhoneLink className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors" />
                       </div>
                     </div>
                   </div>
