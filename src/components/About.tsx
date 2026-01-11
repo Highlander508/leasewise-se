@@ -66,7 +66,9 @@ const About = () => {
                   <img 
                     src={logo.src} 
                     alt={logo.alt} 
-                    className="max-h-16 max-w-full w-auto h-auto object-contain"
+                    className={`max-w-full w-auto h-auto object-contain ${
+                      logo.alt === "DHL Logo" ? "max-h-20" : "max-h-16"
+                    }`}
                     loading="lazy"
                   />
                 </div>
