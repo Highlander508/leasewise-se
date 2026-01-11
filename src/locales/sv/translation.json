@@ -174,17 +174,17 @@
     "contact": "Kontakt",
     "email": "Email: info@leasewise.se",
     "phone": "Telefon: +46 123 456 789",
-    "company": "LeaseWise AB",
+    "company": "LeaseWise",
     "slogan": "Rätt hyra. Rätt villkor. Alltid.",
-    "copyright": "© {{year}} LeaseWise AB. Alla rättigheter förbehållna."
+    "copyright": "© {{year}} LeaseWise. Alla rättigheter förbehållna."
   },
   "seo": {
-    "title": "LeaseWise AB - Hyresavtalsförvaltning & Portföljoptimering",
+    "title": "LeaseWise - Hyresavtalsförvaltning & Portföljoptimering",
     "description": "Sänk era hyreskostnader med 10-25%. LeaseWise bevakar, säger upp och omförhandlar hyresavtal. Success fee-modell - ni betalar bara när vi sparar.",
     "keywords": "hyresavtal, hyresförvaltning, omförhandling, portföljoptimering, hyreskostnader, lokalhyra, lease management, sänka hyra, hyresavtalsspecialist",
-    "ogTitle": "LeaseWise AB - Sänk hyreskostnader med 10-25%",
+    "ogTitle": "LeaseWise - Sänk hyreskostnader med 10-25%",
     "ogDescription": "Vi bevakar, säger upp och omförhandlar hyresavtal åt företag. Success fee-modell - betala bara när vi sparar pengar.",
-    "twitterTitle": "LeaseWise AB - Sänk hyreskostnader med 10-25%",
+    "twitterTitle": "LeaseWise - Sänk hyreskostnader med 10-25%",
     "twitterDescription": "Vi bevakar och omförhandlar hyresavtal. Betala bara när vi sparar."
   },
   "passwordGate": {

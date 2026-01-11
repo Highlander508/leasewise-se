@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="LeaseWise AB" className="h-10 mb-4 brightness-0 invert" />
+            <img src={logo} alt="LeaseWise" className="h-10 mb-4 brightness-0 invert" />
             <p className="text-sm text-primary-foreground/80">
               {t('footer.tagline')}
             </p>
