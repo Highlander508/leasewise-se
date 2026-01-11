@@ -58,7 +58,7 @@ const Calculator = () => {
 
               <div className="pt-6 border-t">
                 <p className="text-sm text-muted-foreground mb-4 text-center">
-                  Beräkningen visar ett typiskt spann baserat på marknadsdata och vår erfarenhet. Den exakta besparingen beror på läge, avtal och hyresvärd.
+                  {t('calculator.disclaimer')}
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
