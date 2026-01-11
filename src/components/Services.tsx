@@ -1,4 +1,4 @@
-import { Eye, FileX, MessageSquare, TrendingDown, CalendarClock } from "lucide-react";
+import { Eye, FileX, MessageSquare, TrendingUp, CalendarClock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
@@ -27,7 +27,7 @@ const Services = () => {
       description: t('services.steps.negotiation.description')
     },
     {
-      icon: <TrendingDown className="h-12 w-12 text-secondary" />,
+      icon: <TrendingUp className="h-12 w-12 text-secondary" />,
       title: t('services.steps.results.title'),
       description: t('services.steps.results.description')
     }
