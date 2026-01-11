@@ -67,7 +67,7 @@ const About = () => {
                     src={logo.src} 
                     alt={logo.alt} 
                     className={`max-w-full w-auto h-auto object-contain ${
-                      logo.alt === "DHL Logo" ? "max-h-20" : "max-h-16"
+                      logo.alt === "DHL Logo" || logo.alt === "JumpYard Logo" ? "max-h-20" : "max-h-16"
                     }`}
                     loading="lazy"
                   />
