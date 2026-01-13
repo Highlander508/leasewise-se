@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lock, Target } from "lucide-react";
 import specsaversLogo from "@/assets/specsavers-logo.png";
 import jumpyardLogo from "@/assets/jumpyard-logo.png";
-import beijerLogo from "@/assets/beijer-logo.png";
+import merLogo from "@/assets/mer-logo.jpeg";
 import dollarstoreLogo from "@/assets/dollarstore-logo.webp";
 import jemfixLogo from "@/assets/jemfix-logo.jpg";
 import dhlLogo from "@/assets/dhl-logo.png";
@@ -18,7 +18,7 @@ const About = () => {
   const clientLogos = [
     { src: specsaversLogo, alt: "Specsavers Logo" },
     { src: jumpyardLogo, alt: "JumpYard Logo" },
-    { src: beijerLogo, alt: "Beijer Byggmaterial Logo" },
+    { src: merLogo, alt: "Mer Logo" },
     { src: dollarstoreLogo, alt: "DollarStore Logo" },
     { src: jemfixLogo, alt: "Jem & Fix Logo" },
     { src: dhlLogo, alt: "DHL Logo" },
