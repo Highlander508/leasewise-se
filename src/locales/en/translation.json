@@ -172,6 +172,7 @@
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "callUs": "Call us",
+    "emailUs": "Email us",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",

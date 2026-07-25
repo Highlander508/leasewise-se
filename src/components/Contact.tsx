@@ -30,8 +30,8 @@ const Contact = () => {
                       <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary mt-1 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="font-semibold text-sm mb-2">{t('contact.emailLabel')}</div>
-                        <a href="mailto:info@leasewise.se" className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all">
-                          info@leasewise.se
+                        <a href="mailto:oliver@ventzure.se" className="text-sm md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors break-all">
+                          {t('contact.emailUs')}
                         </a>
                       </div>
                     </div>
